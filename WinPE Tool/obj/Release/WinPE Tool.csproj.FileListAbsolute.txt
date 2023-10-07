@@ -1,0 +1,15 @@
+C:\Users\asus\source\repos\WinPE Tool\bin\Release\WinPE Tool.exe.config
+C:\Users\asus\source\repos\WinPE Tool\bin\Release\WinPE Tool.exe
+C:\Users\asus\source\repos\WinPE Tool\bin\Release\WinPE Tool.pdb
+C:\Users\asus\source\repos\WinPE Tool\obj\Release\WinPE Tool.csproj.AssemblyReference.cache
+C:\Users\asus\source\repos\WinPE Tool\obj\Release\WinPE_Tool.Form1.resources
+C:\Users\asus\source\repos\WinPE Tool\obj\Release\WinPE_Tool.Properties.Resources.resources
+C:\Users\asus\source\repos\WinPE Tool\obj\Release\WinPE Tool.csproj.GenerateResource.cache
+C:\Users\asus\source\repos\WinPE Tool\obj\Release\WinPE Tool.csproj.CoreCompileInputs.cache
+C:\Users\asus\source\repos\WinPE Tool\obj\Release\WinPE Tool.exe
+C:\Users\asus\source\repos\WinPE Tool\obj\Release\WinPE Tool.pdb
+C:\Users\asus\source\repos\WinPE Tool\bin\Release\WinPE Tool.exe.manifest
+C:\Users\asus\source\repos\WinPE Tool\bin\Release\WinPE Tool.application
+C:\Users\asus\source\repos\WinPE Tool\obj\Release\WinPE Tool.TrustInfo.xml
+C:\Users\asus\source\repos\WinPE Tool\obj\Release\WinPE Tool.exe.manifest
+C:\Users\asus\source\repos\WinPE Tool\obj\Release\WinPE Tool.application

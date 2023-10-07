@@ -1,0 +1,10 @@
+C:\Users\asus\source\repos\WinPE Tool\bin\Debug\WinPE Tool.exe.config
+C:\Users\asus\source\repos\WinPE Tool\bin\Debug\WinPE Tool.exe
+C:\Users\asus\source\repos\WinPE Tool\bin\Debug\WinPE Tool.pdb
+C:\Users\asus\source\repos\WinPE Tool\obj\Debug\WinPE Tool.csproj.AssemblyReference.cache
+C:\Users\asus\source\repos\WinPE Tool\obj\Debug\WinPE_Tool.Form1.resources
+C:\Users\asus\source\repos\WinPE Tool\obj\Debug\WinPE_Tool.Properties.Resources.resources
+C:\Users\asus\source\repos\WinPE Tool\obj\Debug\WinPE Tool.csproj.GenerateResource.cache
+C:\Users\asus\source\repos\WinPE Tool\obj\Debug\WinPE Tool.csproj.CoreCompileInputs.cache
+C:\Users\asus\source\repos\WinPE Tool\obj\Debug\WinPE Tool.exe
+C:\Users\asus\source\repos\WinPE Tool\obj\Debug\WinPE Tool.pdb
