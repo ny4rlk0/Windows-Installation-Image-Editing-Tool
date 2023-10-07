@@ -1,7 +1,7 @@
 # WindowsImageTool
 Sysinternals Windows Image Tool. Sysinternals Windows Imaj Aracı.
 <br>English/Türkçe
-<br><a href="[https://github.com/ny4rlk0/WindowsImageTool/releases/download/WindowsImageTool/SysinternalsWindowsImageTool.exe](https://github.com/ny4rlk0/WindowsImageTool/releases/download/WindowsImageTool/SysinternalsWindowsImageTool.exe)">Download / İndir</a>
+<br><a href="https://github.com/ny4rlk0/WindowsImageTool/releases/download/WindowsImageTool/SysinternalWindowsImageTool.exe">Download / İndir</a>
 <br>Example Windows ISO Folder Content
 <br><img src="https://raw.githubusercontent.com/ny4rlk0/WindowsImageTool/main/15.png">
 <br>Example Windows ISO Source Folder Content
