@@ -167,10 +167,9 @@
             this.groupBox15 = new System.Windows.Forms.GroupBox();
             this.radioButton4 = new System.Windows.Forms.RadioButton();
             this.radioButton5 = new System.Windows.Forms.RadioButton();
-            this.groupBox16 = new System.Windows.Forms.GroupBox();
-            this.radioButton7 = new System.Windows.Forms.RadioButton();
-            this.radioButton8 = new System.Windows.Forms.RadioButton();
             this.checkBox15 = new System.Windows.Forms.CheckBox();
+            this.textBox8 = new System.Windows.Forms.TextBox();
+            this.label16 = new System.Windows.Forms.Label();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.groupBox7.SuspendLayout();
@@ -199,7 +198,6 @@
             this.tabPage7.SuspendLayout();
             this.tabPage8.SuspendLayout();
             this.groupBox15.SuspendLayout();
-            this.groupBox16.SuspendLayout();
             this.SuspendLayout();
             // 
             // label1
@@ -1900,8 +1898,9 @@
             // tabPage8
             // 
             this.tabPage8.BackColor = System.Drawing.Color.Black;
+            this.tabPage8.Controls.Add(this.label16);
+            this.tabPage8.Controls.Add(this.textBox8);
             this.tabPage8.Controls.Add(this.checkBox15);
-            this.tabPage8.Controls.Add(this.groupBox16);
             this.tabPage8.Controls.Add(this.groupBox15);
             this.tabPage8.Controls.Add(this.button59);
             this.tabPage8.Controls.Add(this.button57);
@@ -2012,57 +2011,38 @@
             this.radioButton5.Text = "x86";
             this.radioButton5.UseVisualStyleBackColor = true;
             // 
-            // groupBox16
-            // 
-            this.groupBox16.BackColor = System.Drawing.Color.Black;
-            this.groupBox16.Controls.Add(this.radioButton7);
-            this.groupBox16.Controls.Add(this.radioButton8);
-            this.groupBox16.Enabled = false;
-            this.groupBox16.ForeColor = System.Drawing.Color.White;
-            this.groupBox16.Location = new System.Drawing.Point(1096, 294);
-            this.groupBox16.Name = "groupBox16";
-            this.groupBox16.Size = new System.Drawing.Size(174, 101);
-            this.groupBox16.TabIndex = 19;
-            this.groupBox16.TabStop = false;
-            this.groupBox16.Text = "Boot";
-            this.groupBox16.Visible = false;
-            // 
-            // radioButton7
-            // 
-            this.radioButton7.AutoSize = true;
-            this.radioButton7.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.radioButton7.Location = new System.Drawing.Point(6, 64);
-            this.radioButton7.Name = "radioButton7";
-            this.radioButton7.Size = new System.Drawing.Size(155, 30);
-            this.radioButton7.TabIndex = 18;
-            this.radioButton7.Text = "etfsboot.com";
-            this.radioButton7.UseVisualStyleBackColor = true;
-            // 
-            // radioButton8
-            // 
-            this.radioButton8.AutoSize = true;
-            this.radioButton8.Checked = true;
-            this.radioButton8.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.radioButton8.Location = new System.Drawing.Point(6, 31);
-            this.radioButton8.Name = "radioButton8";
-            this.radioButton8.Size = new System.Drawing.Size(121, 30);
-            this.radioButton8.TabIndex = 18;
-            this.radioButton8.TabStop = true;
-            this.radioButton8.Text = "efisys.bin";
-            this.radioButton8.UseVisualStyleBackColor = true;
-            // 
             // checkBox15
             // 
             this.checkBox15.AutoSize = true;
-            this.checkBox15.Enabled = false;
             this.checkBox15.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.checkBox15.Location = new System.Drawing.Point(1096, 402);
+            this.checkBox15.Location = new System.Drawing.Point(1096, 294);
             this.checkBox15.Name = "checkBox15";
             this.checkBox15.Size = new System.Drawing.Size(174, 30);
             this.checkBox15.TabIndex = 20;
-            this.checkBox15.Text = "Add boot order";
+            this.checkBox15.Text = "Use boot order";
             this.checkBox15.UseVisualStyleBackColor = true;
-            this.checkBox15.Visible = false;
+            // 
+            // textBox8
+            // 
+            this.textBox8.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.textBox8.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBox8.Location = new System.Drawing.Point(1096, 426);
+            this.textBox8.Name = "textBox8";
+            this.textBox8.Size = new System.Drawing.Size(174, 25);
+            this.textBox8.TabIndex = 21;
+            this.textBox8.Text = "10";
+            this.textBox8.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // label16
+            // 
+            this.label16.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.label16.AutoSize = true;
+            this.label16.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label16.Location = new System.Drawing.Point(1103, 399);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(161, 20);
+            this.label16.TabIndex = 22;
+            this.label16.Text = "Windows Kits Version";
             // 
             // Form1
             // 
@@ -2124,8 +2104,6 @@
             this.tabPage8.PerformLayout();
             this.groupBox15.ResumeLayout(false);
             this.groupBox15.PerformLayout();
-            this.groupBox16.ResumeLayout(false);
-            this.groupBox16.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -2271,10 +2249,9 @@
         private System.Windows.Forms.RadioButton radioButton5;
         private System.Windows.Forms.RadioButton radioButton4;
         private System.Windows.Forms.RadioButton radioButton3;
-        private System.Windows.Forms.GroupBox groupBox16;
-        private System.Windows.Forms.RadioButton radioButton7;
-        private System.Windows.Forms.RadioButton radioButton8;
         private System.Windows.Forms.CheckBox checkBox15;
+        private System.Windows.Forms.TextBox textBox8;
+        private System.Windows.Forms.Label label16;
     }
 }
 

@@ -1,0 +1,2 @@
+boot\bootfix.bin
+boot\en-us\bootsect.exe.mui

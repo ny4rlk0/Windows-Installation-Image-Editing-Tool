@@ -843,7 +843,7 @@ namespace WinPE_Tool
             {
                 try
                 {
-                    richTextBox3.Text = File.ReadAllText(startup_path + "bootOrder.txt");
+                    richTextBox3.Text = File.ReadAllText(startup_path + "bootOrder.txt",Encoding.ASCII);
                 }
                 catch (Exception ex)
                 {
@@ -855,7 +855,7 @@ namespace WinPE_Tool
         {
             try
             {
-                File.WriteAllText(startup_path + "bootOrder.txt", richTextBox3.Text.ToString(), Encoding.UTF8);
+                File.WriteAllText(startup_path + "bootOrder.txt", richTextBox3.Text.ToString(), Encoding.ASCII);
             }
             catch (Exception ex) { MessageBox.Show(ex.ToString()); }
         }
@@ -869,10 +869,11 @@ namespace WinPE_Tool
                     string efi_pathx64 = null,efi_pathArm64=null,efi_pathx86=null;
                     string etfsboot_pathx64 = null, etfsboot_pathArm64 = null, etfsboot_pathx86 = null;
                     string oscdimgx64=null,oscdimgArm64=null,oscdimgx86=null;
-                    //string bootloaderx64 = null, bootloaderArm64=null,bootloaderx86 = null;
                     string isoFolder = null;
-                    string bootOrder = "";//,bootFlag= "-bootdata:2#p0,e,bEtfsboot.com#pEF,e,bEfisys.bin";
-
+                    string bootOrder = "-m -yo\""+startup_path + "bootOrder.txt\" ";//Deleting space in right side of this text causes isos not booting
+                    //time spend because of this = 2 hours FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+                    if (!checkBox15.Checked)
+                        bootOrder = "-m ";
                     try { programfiles_path = upupdowndownleftrightleftrightbastart_ProgramFilesx86();}
                     catch (Exception) { }
                     if (programfiles_path == null || programfiles_path=="")
@@ -897,59 +898,27 @@ namespace WinPE_Tool
                     }
                     if ((efi_pathx64==null || efi_pathx64=="") || (efi_pathArm64 == null || efi_pathArm64 == "") || (efi_pathx86 == null || efi_pathx86 == "") )
                     {
-                        efi_pathx64 = programfiles_path + "\\Windows Kits\\10\\Assessment and Deployment Kit\\Deployment Tools\\amd64\\Oscdimg\\efisys_noprompt.bin";
-                        efi_pathArm64 = programfiles_path + "\\Windows Kits\\10\\Assessment and Deployment Kit\\Deployment Tools\\arm64\\Oscdimg\\efisys_noprompt.bin";
-                        efi_pathx86 = programfiles_path + "\\Windows Kits\\10\\Assessment and Deployment Kit\\Deployment Tools\\x86\\Oscdimg\\efisys_noprompt.bin";
+                        efi_pathx64 = programfiles_path + "\\Windows Kits\\"+textBox8.Text.ToString()+"\\Assessment and Deployment Kit\\Deployment Tools\\amd64\\Oscdimg\\efisys_noprompt.bin";
+                        efi_pathArm64 = programfiles_path + "\\Windows Kits\\"+textBox8.Text.ToString()+"\\Assessment and Deployment Kit\\Deployment Tools\\arm64\\Oscdimg\\efisys_noprompt.bin";
+                        efi_pathx86 = programfiles_path + "\\Windows Kits\\"+textBox8.Text.ToString()+"\\Assessment and Deployment Kit\\Deployment Tools\\x86\\Oscdimg\\efisys_noprompt.bin";
                     }
                     if ((etfsboot_pathx64 == null || etfsboot_pathx64 == "") || (etfsboot_pathArm64 == null || etfsboot_pathArm64 == "") || (etfsboot_pathx86 == null || etfsboot_pathx86 == ""))
                     {
-                        etfsboot_pathx64 = programfiles_path + "\\Windows Kits\\10\\Assessment and Deployment Kit\\Deployment Tools\\amd64\\Oscdimg\\etfsboot.com";
-                        etfsboot_pathArm64 = programfiles_path + "\\Windows Kits\\10\\Assessment and Deployment Kit\\Deployment Tools\\arm64\\Oscdimg\\etfsboot.com";
-                        etfsboot_pathx86 = programfiles_path + "\\Windows Kits\\10\\Assessment and Deployment Kit\\Deployment Tools\\x86\\Oscdimg\\etfsboot.com";
+                        etfsboot_pathx64 = programfiles_path + "\\Windows Kits\\"+textBox8.Text.ToString()+"\\Assessment and Deployment Kit\\Deployment Tools\\amd64\\Oscdimg\\etfsboot.com";
+                        etfsboot_pathArm64 = programfiles_path + "\\Windows Kits\\"+textBox8.Text.ToString()+"\\Assessment and Deployment Kit\\Deployment Tools\\arm64\\Oscdimg\\etfsboot.com";
+                        etfsboot_pathx86 = programfiles_path + "\\Windows Kits\\"+textBox8.Text.ToString()+"\\Assessment and Deployment Kit\\Deployment Tools\\x86\\Oscdimg\\etfsboot.com";
                     }
-                    /*if (radioButton8.Checked)//EFI NEW
-                    {
-                        bootloaderx64 = efi_pathx64;
-                        bootloaderx86 = efi_pathx86;
-                        bootloaderArm64 = efi_pathArm64;
-                        //bootFlag = "-pEF";
-                    }
-                    else if (radioButton7.Checked)//ETFSBOOT OLD
-                    {
-                        bootloaderx64 = etfsboot_pathx64;
-                        bootloaderx86 = etfsboot_pathx86;
-                        bootloaderArm64 = etfsboot_pathArm64;
-                        //bootFlag = "-p0";
-                    }*/
-                    /*if (File.Exists(startup_path + "bootOrder.txt")&&checkBox15.Checked)
-                    {
-                        try
-                        {
-                            bootOrder = "-m -yo" + startup_path + "bootOrder.txt ";
-                        }
-                        catch (Exception ex)
-                        {
-                            MessageBox.Show(ex.ToString());
-                        }
-                    }*/
-                    /*using (var fbd = new OpenFileDialog())
-                    {
-                        DialogResult result = fbd.ShowDialog();
-                        if (result == DialogResult.OK && !string.IsNullOrWhiteSpace(fbd.FileName))
-                           efi_path = fbd.FileName.ToString();
-                    }*/
-                    //Oscdimg -bC:\winpe_amd64\Efisys.bin -pEF -u1 -udfver102 C:\winpe_amd64\media C:\winpe_amd64\winpeamd64.iso
                     if (programfiles_path!=null||programfiles_path!="")
                     {
-                        oscdimgx64 = programfiles_path + "\\Windows Kits\\10\\Assessment and Deployment Kit\\Deployment Tools\\amd64\\Oscdimg\\oscdimg.exe";
-                        oscdimgArm64 = programfiles_path + "\\Windows Kits\\10\\Assessment and Deployment Kit\\Deployment Tools\\arm64\\Oscdimg\\oscdimg.exe";
-                        oscdimgx86 = programfiles_path + "\\Windows Kits\\10\\Assessment and Deployment Kit\\Deployment Tools\\x86\\Oscdimg\\oscdimg.exe";
+                        oscdimgx64 = programfiles_path + "\\Windows Kits\\"+textBox8.Text.ToString()+"\\Assessment and Deployment Kit\\Deployment Tools\\amd64\\Oscdimg\\oscdimg.exe";
+                        oscdimgArm64 = programfiles_path + "\\Windows Kits\\"+textBox8.Text.ToString()+"\\Assessment and Deployment Kit\\Deployment Tools\\arm64\\Oscdimg\\oscdimg.exe";
+                        oscdimgx86 = programfiles_path + "\\Windows Kits\\"+textBox8.Text.ToString()+"\\Assessment and Deployment Kit\\Deployment Tools\\x86\\Oscdimg\\oscdimg.exe";
                     }
-                    if (isoFolder!=null&& isoFolder != ""&&radioButton3.Checked && efi_pathx64 != null && programfiles_path != null && programfiles_path != ""&&oscdimgx64!=null)//x64
+                    if (File.Exists(oscdimgx64)&&File.Exists(efi_pathx64)&& File.Exists(etfsboot_pathx64)&& isoFolder!=null&& isoFolder != ""&&radioButton3.Checked && efi_pathx64 != null && programfiles_path != null && programfiles_path != ""&&oscdimgx64!=null)//x64
                         oscdimg(bootOrder + "-bootdata:2#p0,e,b\"" + etfsboot_pathx64 + "\"#pEF,e,b\""+ efi_pathx64 + "\" -u1 -udfver102 \"" + isoFolder + "\" \"" + startup_path + "Created.ISO\"",oscdimgx64);
-                    else if (isoFolder != null && isoFolder != "" && radioButton4.Checked && efi_pathArm64 != null && programfiles_path != null && programfiles_path != ""&&oscdimgArm64!=null)//Arm64
+                    else if (File.Exists(oscdimgArm64)&&File.Exists(efi_pathArm64) && File.Exists(etfsboot_pathArm64) && isoFolder != null && isoFolder != "" && radioButton4.Checked && efi_pathArm64 != null && programfiles_path != null && programfiles_path != ""&&oscdimgArm64!=null)//Arm64
                         oscdimg(bootOrder + "-bootdata:2#p0,e,b\"" +  etfsboot_pathArm64 + "\"#pEF,e,b\"" + efi_pathArm64 + "\" -u1 -udfver102 \"" + isoFolder + "\" \"" + startup_path + "Created.ISO\"", oscdimgArm64);
-                    else if (isoFolder != null && isoFolder != "" && radioButton5.Checked && efi_pathx86 != null && programfiles_path != null && programfiles_path != ""&&oscdimgx86!=null)//x86
+                    else if (File.Exists(oscdimgx86)&&File.Exists(efi_pathx86) && File.Exists(etfsboot_pathx86) && isoFolder != null && isoFolder != "" && radioButton5.Checked && efi_pathx86 != null && programfiles_path != null && programfiles_path != ""&&oscdimgx86!=null)//x86
                         oscdimg(bootOrder + "-bootdata:2#p0,e,b\"" +  etfsboot_pathx86 + "\"#pEF,e,b\"" + efi_pathx86 + "\" -u1 -udfver102 \"" + isoFolder + "\" \"" + startup_path + "Created.ISO\"", oscdimgx86);
                 }
             }

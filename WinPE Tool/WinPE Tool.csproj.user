@@ -3,10 +3,10 @@
   <PropertyGroup>
     <PublishUrlHistory>C:\Users\asus\Desktop\WinImageTool\|publish\</PublishUrlHistory>
     <InstallUrlHistory />
-    <SupportUrlHistory />
+    <SupportUrlHistory>https://github.com/ny4rlk0</SupportUrlHistory>
     <UpdateUrlHistory />
     <BootstrapperUrlHistory />
-    <ErrorReportUrlHistory />
+    <ErrorReportUrlHistory>https://github.com/ny4rlk0</ErrorReportUrlHistory>
     <FallbackCulture>tr-TR</FallbackCulture>
     <VerifyUploadedFiles>false</VerifyUploadedFiles>
   </PropertyGroup>
