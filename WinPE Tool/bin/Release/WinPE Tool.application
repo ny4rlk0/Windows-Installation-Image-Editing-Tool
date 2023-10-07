@@ -7,14 +7,14 @@
     <framework targetVersion="4.7.2" profile="Full" supportedRuntime="4.0.30319" />
   </compatibleFrameworks>
   <dependency>
-    <dependentAssembly dependencyType="install" codebase="WinPE Tool.exe.manifest" size="5122">
+    <dependentAssembly dependencyType="install" codebase="WinPE Tool.exe.manifest" size="5123">
       <assemblyIdentity name="WinPE Tool.exe" version="1.0.0.0" publicKeyToken="0000000000000000" language="neutral" processorArchitecture="msil" type="win32" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>ll4Ri8c3IAiqfZnaNhV3vQ1CvysvKzPgs+UwR2axlEc=</dsig:DigestValue>
+        <dsig:DigestValue>0s4sQA4m+f25NH4n1iRPevjhBfwW318d1ZM5lsIi2/8=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
