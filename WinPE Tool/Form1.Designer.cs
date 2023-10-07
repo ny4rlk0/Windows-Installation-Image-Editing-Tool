@@ -170,6 +170,12 @@
             this.checkBox15 = new System.Windows.Forms.CheckBox();
             this.textBox8 = new System.Windows.Forms.TextBox();
             this.label16 = new System.Windows.Forms.Label();
+            this.groupBox16 = new System.Windows.Forms.GroupBox();
+            this.button61 = new System.Windows.Forms.Button();
+            this.button60 = new System.Windows.Forms.Button();
+            this.button62 = new System.Windows.Forms.Button();
+            this.checkBox16 = new System.Windows.Forms.CheckBox();
+            this.button63 = new System.Windows.Forms.Button();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.groupBox7.SuspendLayout();
@@ -198,6 +204,7 @@
             this.tabPage7.SuspendLayout();
             this.tabPage8.SuspendLayout();
             this.groupBox15.SuspendLayout();
+            this.groupBox16.SuspendLayout();
             this.SuspendLayout();
             // 
             // label1
@@ -278,7 +285,7 @@
             this.tabControl1.Location = new System.Drawing.Point(13, 34);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(1281, 492);
+            this.tabControl1.Size = new System.Drawing.Size(1281, 567);
             this.tabControl1.TabIndex = 6;
             // 
             // tabPage1
@@ -297,12 +304,12 @@
             this.tabPage1.Controls.Add(this.label5);
             this.tabPage1.Controls.Add(this.button2);
             this.tabPage1.Controls.Add(this.button1);
-            this.tabPage1.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.tabPage1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.tabPage1.ForeColor = System.Drawing.Color.White;
             this.tabPage1.Location = new System.Drawing.Point(4, 34);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(1273, 454);
+            this.tabPage1.Size = new System.Drawing.Size(1273, 529);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Wim Bağla / Kaldır";
             // 
@@ -312,7 +319,7 @@
             this.label12.ForeColor = System.Drawing.Color.DimGray;
             this.label12.Location = new System.Drawing.Point(12, 249);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(931, 52);
+            this.label12.Size = new System.Drawing.Size(791, 48);
             this.label12.TabIndex = 14;
             this.label12.Text = "(İşaretlenmezse varsayılan olarak tüm değişiklikler imaj klasörü üzerinde yapılac" +
     "aktır, ek olarak \r\nWim Klasörü ve İmaj Dosyası seçmeniz gerekecektir.)\r\n";
@@ -323,7 +330,7 @@
             this.checkBox2.AutoSize = true;
             this.checkBox2.Location = new System.Drawing.Point(12, 221);
             this.checkBox2.Name = "checkBox2";
-            this.checkBox2.Size = new System.Drawing.Size(911, 30);
+            this.checkBox2.Size = new System.Drawing.Size(787, 28);
             this.checkBox2.TabIndex = 12;
             this.checkBox2.Text = "/Online (Değişiklikleri ve sorgulamaları bu bilgisayardaki Windows yüklemesi üzer" +
     "inde yap!)";
@@ -338,7 +345,7 @@
             this.textBox2.Enabled = false;
             this.textBox2.Location = new System.Drawing.Point(189, 41);
             this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(1078, 25);
+            this.textBox2.Size = new System.Drawing.Size(1078, 22);
             this.textBox2.TabIndex = 11;
             // 
             // label7
@@ -346,7 +353,7 @@
             this.label7.AutoSize = true;
             this.label7.Location = new System.Drawing.Point(7, 40);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(105, 26);
+            this.label7.Size = new System.Drawing.Size(87, 24);
             this.label7.TabIndex = 10;
             this.label7.Text = "İmaj Yolu";
             // 
@@ -355,7 +362,7 @@
             this.label6.AutoSize = true;
             this.label6.Location = new System.Drawing.Point(7, 9);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(176, 26);
+            this.label6.Size = new System.Drawing.Size(148, 24);
             this.label6.TabIndex = 9;
             this.label6.Text = "Wim Klasör Yolu";
             // 
@@ -368,7 +375,7 @@
             this.textBox1.Enabled = false;
             this.textBox1.Location = new System.Drawing.Point(189, 10);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(1078, 25);
+            this.textBox1.Size = new System.Drawing.Size(1078, 22);
             this.textBox1.TabIndex = 8;
             // 
             // groupBox7
@@ -477,7 +484,7 @@
             this.radioButton1.Checked = true;
             this.radioButton1.Location = new System.Drawing.Point(6, 31);
             this.radioButton1.Name = "radioButton1";
-            this.radioButton1.Size = new System.Drawing.Size(275, 30);
+            this.radioButton1.Size = new System.Drawing.Size(236, 28);
             this.radioButton1.TabIndex = 5;
             this.radioButton1.TabStop = true;
             this.radioButton1.Text = "/discard (Değişiklikleri sil)";
@@ -488,7 +495,7 @@
             this.radioButton2.AutoSize = true;
             this.radioButton2.Location = new System.Drawing.Point(7, 64);
             this.radioButton2.Name = "radioButton2";
-            this.radioButton2.Size = new System.Drawing.Size(320, 30);
+            this.radioButton2.Size = new System.Drawing.Size(273, 28);
             this.radioButton2.TabIndex = 6;
             this.radioButton2.Text = "/commit (Değişiklikleri kaydet)";
             this.radioButton2.UseVisualStyleBackColor = true;
@@ -498,7 +505,7 @@
             this.numericUpDown1.BackColor = System.Drawing.Color.DarkGray;
             this.numericUpDown1.Location = new System.Drawing.Point(78, 69);
             this.numericUpDown1.Name = "numericUpDown1";
-            this.numericUpDown1.Size = new System.Drawing.Size(84, 32);
+            this.numericUpDown1.Size = new System.Drawing.Size(84, 29);
             this.numericUpDown1.TabIndex = 4;
             this.numericUpDown1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.numericUpDown1.Value = new decimal(new int[] {
@@ -512,7 +519,7 @@
             this.label5.AutoSize = true;
             this.label5.Location = new System.Drawing.Point(7, 75);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(65, 26);
+            this.label5.Size = new System.Drawing.Size(57, 24);
             this.label5.TabIndex = 2;
             this.label5.Text = "Index";
             // 
@@ -545,12 +552,12 @@
             this.tabPage2.Controls.Add(this.button48);
             this.tabPage2.Controls.Add(this.button8);
             this.tabPage2.Controls.Add(this.button6);
-            this.tabPage2.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.tabPage2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.tabPage2.ForeColor = System.Drawing.Color.White;
             this.tabPage2.Location = new System.Drawing.Point(4, 34);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(1273, 454);
+            this.tabPage2.Size = new System.Drawing.Size(1273, 529);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Paketler ve Features";
             // 
@@ -577,7 +584,7 @@
             this.label9.AutoSize = true;
             this.label9.Location = new System.Drawing.Point(6, 28);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(124, 26);
+            this.label9.Size = new System.Drawing.Size(108, 24);
             this.label9.TabIndex = 6;
             this.label9.Text = "Feature Adı";
             // 
@@ -588,7 +595,7 @@
             this.textBox4.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBox4.Location = new System.Drawing.Point(162, 28);
             this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(1093, 25);
+            this.textBox4.Size = new System.Drawing.Size(1093, 22);
             this.textBox4.TabIndex = 7;
             // 
             // button11
@@ -635,7 +642,7 @@
             this.checkBox3.AutoSize = true;
             this.checkBox3.Location = new System.Drawing.Point(478, 36);
             this.checkBox3.Name = "checkBox3";
-            this.checkBox3.Size = new System.Drawing.Size(355, 30);
+            this.checkBox3.Size = new System.Drawing.Size(309, 28);
             this.checkBox3.TabIndex = 9;
             this.checkBox3.Text = "/PreventPending (Sadece Offline)";
             this.checkBox3.UseVisualStyleBackColor = true;
@@ -645,7 +652,7 @@
             this.label8.AutoSize = true;
             this.label8.Location = new System.Drawing.Point(6, 69);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(106, 26);
+            this.label8.Size = new System.Drawing.Size(89, 24);
             this.label8.TabIndex = 5;
             this.label8.Text = "Paket Adı";
             // 
@@ -656,7 +663,7 @@
             this.textBox3.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBox3.Location = new System.Drawing.Point(168, 69);
             this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(1099, 25);
+            this.textBox3.Size = new System.Drawing.Size(1099, 22);
             this.textBox3.TabIndex = 4;
             // 
             // button31
@@ -677,7 +684,7 @@
             this.checkBox1.AutoSize = true;
             this.checkBox1.Location = new System.Drawing.Point(478, 3);
             this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(323, 30);
+            this.checkBox1.Size = new System.Drawing.Size(282, 28);
             this.checkBox1.TabIndex = 3;
             this.checkBox1.Text = "/IgnoreCheck (Sadece Offline)";
             this.checkBox1.UseVisualStyleBackColor = true;
@@ -773,10 +780,11 @@
             this.tabPage3.Controls.Add(this.button21);
             this.tabPage3.Controls.Add(this.button20);
             this.tabPage3.Controls.Add(this.button16);
+            this.tabPage3.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.tabPage3.ForeColor = System.Drawing.Color.White;
             this.tabPage3.Location = new System.Drawing.Point(4, 34);
             this.tabPage3.Name = "tabPage3";
-            this.tabPage3.Size = new System.Drawing.Size(1273, 454);
+            this.tabPage3.Size = new System.Drawing.Size(1273, 529);
             this.tabPage3.TabIndex = 2;
             this.tabPage3.Text = "İmaj Temizleme";
             // 
@@ -785,7 +793,7 @@
             this.label10.AutoSize = true;
             this.label10.Location = new System.Drawing.Point(719, 115);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(70, 26);
+            this.label10.Size = new System.Drawing.Size(57, 24);
             this.label10.TabIndex = 15;
             this.label10.Text = "Index";
             // 
@@ -794,7 +802,7 @@
             this.numericUpDown2.BackColor = System.Drawing.Color.DarkGray;
             this.numericUpDown2.Location = new System.Drawing.Point(795, 109);
             this.numericUpDown2.Name = "numericUpDown2";
-            this.numericUpDown2.Size = new System.Drawing.Size(120, 32);
+            this.numericUpDown2.Size = new System.Drawing.Size(120, 29);
             this.numericUpDown2.TabIndex = 14;
             this.numericUpDown2.Value = new decimal(new int[] {
             1,
@@ -915,11 +923,12 @@
             this.tabPage4.Controls.Add(this.groupBox2);
             this.tabPage4.Controls.Add(this.button26);
             this.tabPage4.Controls.Add(this.button25);
+            this.tabPage4.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.tabPage4.ForeColor = System.Drawing.Color.White;
             this.tabPage4.Location = new System.Drawing.Point(4, 34);
             this.tabPage4.Name = "tabPage4";
             this.tabPage4.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage4.Size = new System.Drawing.Size(1273, 454);
+            this.tabPage4.Size = new System.Drawing.Size(1273, 529);
             this.tabPage4.TabIndex = 3;
             this.tabPage4.Text = "Driver";
             // 
@@ -981,7 +990,7 @@
             this.textBox6.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBox6.Location = new System.Drawing.Point(141, 28);
             this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(476, 25);
+            this.textBox6.Size = new System.Drawing.Size(476, 22);
             this.textBox6.TabIndex = 15;
             this.textBox6.Text = "oem8.inf";
             // 
@@ -1056,7 +1065,7 @@
             this.textBox5.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBox5.Location = new System.Drawing.Point(363, 28);
             this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(892, 25);
+            this.textBox5.Size = new System.Drawing.Size(892, 22);
             this.textBox5.TabIndex = 13;
             this.textBox5.Text = "oem8.inf";
             // 
@@ -1154,10 +1163,11 @@
             this.tabPage5.BackColor = System.Drawing.Color.Black;
             this.tabPage5.Controls.Add(this.groupBox9);
             this.tabPage5.Controls.Add(this.groupBox8);
+            this.tabPage5.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.tabPage5.ForeColor = System.Drawing.Color.White;
             this.tabPage5.Location = new System.Drawing.Point(4, 34);
             this.tabPage5.Name = "tabPage5";
-            this.tabPage5.Size = new System.Drawing.Size(1273, 454);
+            this.tabPage5.Size = new System.Drawing.Size(1273, 529);
             this.tabPage5.TabIndex = 4;
             this.tabPage5.Text = "Dil ve Zaman";
             // 
@@ -1184,6 +1194,7 @@
             this.groupBox11.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.groupBox11.BackColor = System.Drawing.Color.Black;
+            this.groupBox11.Controls.Add(this.button63);
             this.groupBox11.Controls.Add(this.button35);
             this.groupBox11.ForeColor = System.Drawing.Color.White;
             this.groupBox11.Location = new System.Drawing.Point(3, 182);
@@ -1228,7 +1239,7 @@
             this.numericUpDown3.BackColor = System.Drawing.Color.DarkGray;
             this.numericUpDown3.Location = new System.Drawing.Point(203, 26);
             this.numericUpDown3.Name = "numericUpDown3";
-            this.numericUpDown3.Size = new System.Drawing.Size(84, 32);
+            this.numericUpDown3.Size = new System.Drawing.Size(84, 29);
             this.numericUpDown3.TabIndex = 18;
             this.numericUpDown3.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.numericUpDown3.Value = new decimal(new int[] {
@@ -1352,7 +1363,7 @@
             this.textBox7.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBox7.Location = new System.Drawing.Point(164, 28);
             this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(1097, 25);
+            this.textBox7.Size = new System.Drawing.Size(1097, 22);
             this.textBox7.TabIndex = 15;
             this.textBox7.Text = "tr-TR";
             // 
@@ -1411,11 +1422,13 @@
             // tabPage6
             // 
             this.tabPage6.BackColor = System.Drawing.Color.Black;
+            this.tabPage6.Controls.Add(this.groupBox16);
             this.tabPage6.Controls.Add(this.groupBox12);
+            this.tabPage6.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.tabPage6.ForeColor = System.Drawing.Color.White;
             this.tabPage6.Location = new System.Drawing.Point(4, 34);
             this.tabPage6.Name = "tabPage6";
-            this.tabPage6.Size = new System.Drawing.Size(1273, 454);
+            this.tabPage6.Size = new System.Drawing.Size(1273, 529);
             this.tabPage6.TabIndex = 5;
             this.tabPage6.Text = "Appx";
             // 
@@ -1431,7 +1444,7 @@
             this.groupBox12.ForeColor = System.Drawing.Color.White;
             this.groupBox12.Location = new System.Drawing.Point(3, 3);
             this.groupBox12.Name = "groupBox12";
-            this.groupBox12.Size = new System.Drawing.Size(1267, 448);
+            this.groupBox12.Size = new System.Drawing.Size(1267, 424);
             this.groupBox12.TabIndex = 21;
             this.groupBox12.TabStop = false;
             this.groupBox12.Text = "Appx";
@@ -1448,7 +1461,7 @@
             this.groupBox14.ForeColor = System.Drawing.Color.White;
             this.groupBox14.Location = new System.Drawing.Point(6, 306);
             this.groupBox14.Name = "groupBox14";
-            this.groupBox14.Size = new System.Drawing.Size(1255, 136);
+            this.groupBox14.Size = new System.Drawing.Size(1255, 112);
             this.groupBox14.TabIndex = 22;
             this.groupBox14.TabStop = false;
             this.groupBox14.Text = "Uygulama Paketi Kaldırma ve Diğer Ayarlar";
@@ -1470,7 +1483,7 @@
             this.textBox10.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBox10.Location = new System.Drawing.Point(167, 31);
             this.textBox10.Name = "textBox10";
-            this.textBox10.Size = new System.Drawing.Size(1082, 25);
+            this.textBox10.Size = new System.Drawing.Size(1082, 22);
             this.textBox10.TabIndex = 18;
             this.textBox10.Text = "Microsoft.ZuneMusic_11.2305.4.0_neutral_~_8wekyb3d8bbwe";
             // 
@@ -1529,7 +1542,7 @@
             this.textBox9.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBox9.Location = new System.Drawing.Point(424, 48);
             this.textBox9.Name = "textBox9";
-            this.textBox9.Size = new System.Drawing.Size(97, 25);
+            this.textBox9.Size = new System.Drawing.Size(97, 22);
             this.textBox9.TabIndex = 17;
             this.textBox9.Text = "all";
             this.textBox9.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -1619,7 +1632,7 @@
             0,
             0});
             this.numericUpDown4.Name = "numericUpDown4";
-            this.numericUpDown4.Size = new System.Drawing.Size(158, 32);
+            this.numericUpDown4.Size = new System.Drawing.Size(158, 29);
             this.numericUpDown4.TabIndex = 19;
             this.numericUpDown4.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.numericUpDown4.Value = new decimal(new int[] {
@@ -1660,7 +1673,7 @@
             this.richTextBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.richTextBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.richTextBox1.ForeColor = System.Drawing.Color.White;
-            this.richTextBox1.Location = new System.Drawing.Point(13, 532);
+            this.richTextBox1.Location = new System.Drawing.Point(13, 607);
             this.richTextBox1.Name = "richTextBox1";
             this.richTextBox1.ReadOnly = true;
             this.richTextBox1.Size = new System.Drawing.Size(1281, 260);
@@ -1738,7 +1751,7 @@
             this.comboBox1.FormattingEnabled = true;
             this.comboBox1.Location = new System.Drawing.Point(164, 21);
             this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(1097, 33);
+            this.comboBox1.Size = new System.Drawing.Size(1097, 32);
             this.comboBox1.TabIndex = 21;
             // 
             // button47
@@ -1774,25 +1787,31 @@
             this.tabPage7.Controls.Add(this.button50);
             this.tabPage7.Controls.Add(this.button49);
             this.tabPage7.Controls.Add(this.richTextBox2);
+            this.tabPage7.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.tabPage7.ForeColor = System.Drawing.Color.White;
             this.tabPage7.Location = new System.Drawing.Point(4, 34);
             this.tabPage7.Name = "tabPage7";
-            this.tabPage7.Size = new System.Drawing.Size(1273, 454);
+            this.tabPage7.Size = new System.Drawing.Size(1273, 529);
             this.tabPage7.TabIndex = 6;
             this.tabPage7.Text = "Startnet.cmd";
             // 
             // richTextBox2
             // 
+            this.richTextBox2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.richTextBox2.BackColor = System.Drawing.Color.Black;
+            this.richTextBox2.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.richTextBox2.ForeColor = System.Drawing.Color.White;
             this.richTextBox2.Location = new System.Drawing.Point(3, 3);
             this.richTextBox2.Name = "richTextBox2";
-            this.richTextBox2.Size = new System.Drawing.Size(1087, 448);
+            this.richTextBox2.Size = new System.Drawing.Size(1087, 523);
             this.richTextBox2.TabIndex = 0;
             this.richTextBox2.Text = "wpeinit\n";
             // 
             // button49
             // 
+            this.button49.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.button49.BackColor = System.Drawing.Color.DimGray;
             this.button49.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button49.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
@@ -1806,6 +1825,7 @@
             // 
             // button50
             // 
+            this.button50.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.button50.BackColor = System.Drawing.Color.DimGray;
             this.button50.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button50.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
@@ -1906,25 +1926,31 @@
             this.tabPage8.Controls.Add(this.button57);
             this.tabPage8.Controls.Add(this.button58);
             this.tabPage8.Controls.Add(this.richTextBox3);
+            this.tabPage8.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.tabPage8.ForeColor = System.Drawing.Color.White;
             this.tabPage8.Location = new System.Drawing.Point(4, 34);
             this.tabPage8.Name = "tabPage8";
-            this.tabPage8.Size = new System.Drawing.Size(1273, 454);
+            this.tabPage8.Size = new System.Drawing.Size(1273, 529);
             this.tabPage8.TabIndex = 7;
             this.tabPage8.Text = "Boot Order";
             // 
             // richTextBox3
             // 
+            this.richTextBox3.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.richTextBox3.BackColor = System.Drawing.Color.Black;
+            this.richTextBox3.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.richTextBox3.ForeColor = System.Drawing.Color.White;
             this.richTextBox3.Location = new System.Drawing.Point(3, 3);
             this.richTextBox3.Name = "richTextBox3";
-            this.richTextBox3.Size = new System.Drawing.Size(1087, 448);
+            this.richTextBox3.Size = new System.Drawing.Size(1087, 526);
             this.richTextBox3.TabIndex = 14;
             this.richTextBox3.Text = resources.GetString("richTextBox3.Text");
             // 
             // button57
             // 
+            this.button57.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.button57.BackColor = System.Drawing.Color.DimGray;
             this.button57.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button57.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
@@ -1938,6 +1964,7 @@
             // 
             // button58
             // 
+            this.button58.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.button58.BackColor = System.Drawing.Color.DimGray;
             this.button58.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button58.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
@@ -1951,6 +1978,7 @@
             // 
             // button59
             // 
+            this.button59.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.button59.BackColor = System.Drawing.Color.DimGray;
             this.button59.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button59.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
@@ -1964,6 +1992,7 @@
             // 
             // radioButton3
             // 
+            this.radioButton3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.radioButton3.AutoSize = true;
             this.radioButton3.Checked = true;
             this.radioButton3.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
@@ -1977,6 +2006,7 @@
             // 
             // groupBox15
             // 
+            this.groupBox15.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.groupBox15.BackColor = System.Drawing.Color.Black;
             this.groupBox15.Controls.Add(this.radioButton5);
             this.groupBox15.Controls.Add(this.radioButton4);
@@ -1991,6 +2021,7 @@
             // 
             // radioButton4
             // 
+            this.radioButton4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.radioButton4.AutoSize = true;
             this.radioButton4.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.radioButton4.Location = new System.Drawing.Point(6, 64);
@@ -2002,6 +2033,7 @@
             // 
             // radioButton5
             // 
+            this.radioButton5.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.radioButton5.AutoSize = true;
             this.radioButton5.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.radioButton5.Location = new System.Drawing.Point(6, 100);
@@ -2013,6 +2045,7 @@
             // 
             // checkBox15
             // 
+            this.checkBox15.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.checkBox15.AutoSize = true;
             this.checkBox15.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.checkBox15.Location = new System.Drawing.Point(1096, 294);
@@ -2026,9 +2059,9 @@
             // 
             this.textBox8.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.textBox8.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox8.Location = new System.Drawing.Point(1096, 426);
+            this.textBox8.Location = new System.Drawing.Point(1096, 501);
             this.textBox8.Name = "textBox8";
-            this.textBox8.Size = new System.Drawing.Size(174, 25);
+            this.textBox8.Size = new System.Drawing.Size(174, 22);
             this.textBox8.TabIndex = 21;
             this.textBox8.Text = "10";
             this.textBox8.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -2038,18 +2071,97 @@
             this.label16.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.label16.AutoSize = true;
             this.label16.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label16.Location = new System.Drawing.Point(1103, 399);
+            this.label16.Location = new System.Drawing.Point(1103, 474);
             this.label16.Name = "label16";
             this.label16.Size = new System.Drawing.Size(161, 20);
             this.label16.TabIndex = 22;
             this.label16.Text = "Windows Kits Version";
+            // 
+            // groupBox16
+            // 
+            this.groupBox16.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.groupBox16.BackColor = System.Drawing.Color.Black;
+            this.groupBox16.Controls.Add(this.checkBox16);
+            this.groupBox16.Controls.Add(this.button62);
+            this.groupBox16.Controls.Add(this.button60);
+            this.groupBox16.Controls.Add(this.button61);
+            this.groupBox16.ForeColor = System.Drawing.Color.White;
+            this.groupBox16.Location = new System.Drawing.Point(3, 431);
+            this.groupBox16.Name = "groupBox16";
+            this.groupBox16.Size = new System.Drawing.Size(1255, 95);
+            this.groupBox16.TabIndex = 22;
+            this.groupBox16.TabStop = false;
+            this.groupBox16.Text = "PPKG";
+            // 
+            // button61
+            // 
+            this.button61.BackColor = System.Drawing.Color.DimGray;
+            this.button61.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button61.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.button61.Location = new System.Drawing.Point(6, 47);
+            this.button61.Name = "button61";
+            this.button61.Size = new System.Drawing.Size(281, 42);
+            this.button61.TabIndex = 12;
+            this.button61.Text = "/Add-ProvisioningPackage";
+            this.button61.UseVisualStyleBackColor = false;
+            this.button61.Click += new System.EventHandler(this.button62_Click);
+            // 
+            // button60
+            // 
+            this.button60.BackColor = System.Drawing.Color.DimGray;
+            this.button60.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button60.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.button60.Location = new System.Drawing.Point(293, 47);
+            this.button60.Name = "button60";
+            this.button60.Size = new System.Drawing.Size(319, 42);
+            this.button60.TabIndex = 12;
+            this.button60.Text = "/Get-ProvisioningPackageInfo";
+            this.button60.UseVisualStyleBackColor = false;
+            this.button60.Click += new System.EventHandler(this.button63_Click);
+            // 
+            // button62
+            // 
+            this.button62.BackColor = System.Drawing.Color.DimGray;
+            this.button62.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button62.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.button62.Location = new System.Drawing.Point(618, 47);
+            this.button62.Name = "button62";
+            this.button62.Size = new System.Drawing.Size(278, 42);
+            this.button62.TabIndex = 12;
+            this.button62.Text = "/Apply-CustomDataImage";
+            this.button62.UseVisualStyleBackColor = false;
+            this.button62.Click += new System.EventHandler(this.button64_Click);
+            // 
+            // checkBox16
+            // 
+            this.checkBox16.AutoSize = true;
+            this.checkBox16.Location = new System.Drawing.Point(902, 61);
+            this.checkBox16.Name = "checkBox16";
+            this.checkBox16.Size = new System.Drawing.Size(162, 28);
+            this.checkBox16.TabIndex = 13;
+            this.checkBox16.Text = " /SingleInstance";
+            this.checkBox16.UseVisualStyleBackColor = true;
+            // 
+            // button63
+            // 
+            this.button63.BackColor = System.Drawing.Color.DimGray;
+            this.button63.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button63.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.button63.Location = new System.Drawing.Point(211, 31);
+            this.button63.Name = "button63";
+            this.button63.Size = new System.Drawing.Size(330, 42);
+            this.button63.TabIndex = 12;
+            this.button63.Text = "Dil klasörü kopyala";
+            this.button63.UseVisualStyleBackColor = false;
+            this.button63.Click += new System.EventHandler(this.button65_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.DimGray;
-            this.ClientSize = new System.Drawing.Size(1306, 804);
+            this.ClientSize = new System.Drawing.Size(1306, 879);
             this.Controls.Add(this.tabControl1);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
@@ -2104,6 +2216,8 @@
             this.tabPage8.PerformLayout();
             this.groupBox15.ResumeLayout(false);
             this.groupBox15.PerformLayout();
+            this.groupBox16.ResumeLayout(false);
+            this.groupBox16.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -2252,6 +2366,12 @@
         private System.Windows.Forms.CheckBox checkBox15;
         private System.Windows.Forms.TextBox textBox8;
         private System.Windows.Forms.Label label16;
+        private System.Windows.Forms.GroupBox groupBox16;
+        private System.Windows.Forms.Button button61;
+        private System.Windows.Forms.Button button60;
+        private System.Windows.Forms.Button button62;
+        private System.Windows.Forms.CheckBox checkBox16;
+        private System.Windows.Forms.Button button63;
     }
 }
 

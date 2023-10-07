@@ -557,7 +557,7 @@ namespace WinPE_Tool
         private void button37_Click(object sender, EventArgs e)
         {
             if (!checkBox2.Checked && ImageFilePath != null && WimFolderPath != null) 
-                CMD("/C dism /Image:\"" + WimFolderPath + "\" /Gen-LangINI /distribution:\"" + ImageFilePath + "\"");
+                CMD("/C dism /Image:\"" + ImageFilePath + "\" /Gen-LangINI /distribution:\"" + WimFolderPath + "\"");
         }
         private void button42_Click(object sender, EventArgs e)
         {
@@ -811,6 +811,7 @@ namespace WinPE_Tool
             button58.Text = "Open";
             button57.Text = "Save";
             button59.Text = "Create ISO";
+            button63.Text = "Copy Language Folder";
 
         }
         private void button51_Click(object sender, EventArgs e)
@@ -923,6 +924,119 @@ namespace WinPE_Tool
                 }
             }
             catch (Exception ex) { MessageBox.Show(ex.ToString()); }
+        }
+        private void button62_Click(object sender, EventArgs e)
+        {
+            if (!checkBox2.Checked && ImageFilePath != null && WimFolderPath != null) //If it is a offline image not an running windows installation
+            {
+                if (lang)
+                    MessageBox.Show("İmaja eklenecek paketi seçin ppkg. (dosya!)");
+                else if (!lang)
+                    MessageBox.Show("Select a package to add this image. (ppkg file!)");
+                using (var fbd = new OpenFileDialog())
+                {
+                    DialogResult result = fbd.ShowDialog();
+                    if (result == DialogResult.OK && !string.IsNullOrWhiteSpace(fbd.FileName))
+                        CMD("/C dism /Image:\"" + WimFolderPath + "\" /Set-ProvisionedAppxDataFile /CustomDataPath:\"" + fbd.FileName.ToString() + "\"");
+                }
+            }
+            else if (checkBox2.Checked) //If it is a running windows installation
+            {
+                if (lang)
+                    MessageBox.Show("Bu bilgisayara eklenecek paketi seçin ppkg. (dosya!)");
+                else if (!lang)
+                    MessageBox.Show("Select a package to add this computer. (ppkg file!)");
+                using (var fbd = new OpenFileDialog())
+                {
+                    DialogResult result = fbd.ShowDialog();
+                    if (result == DialogResult.OK && !string.IsNullOrWhiteSpace(fbd.FileName))
+                        CMD("/C dism /Online /Set-ProvisionedAppxDataFile /CustomDataPath:\"" + fbd.FileName.ToString() + "\"");
+                }
+            }
+        }
+        private void button63_Click(object sender, EventArgs e)
+        {
+            if (!checkBox2.Checked && ImageFilePath != null && WimFolderPath != null) //If it is a offline image not an running windows installation
+            {
+                if (lang)
+                    MessageBox.Show("Hakkında bilgi almak için imajdan bir paket seçin ppkg. (dosya!)");
+                else if (!lang)
+                    MessageBox.Show("Select a package in image to get the information about it. (ppkg file!)");
+                using (var fbd = new OpenFileDialog())
+                {
+                    DialogResult result = fbd.ShowDialog();
+                    if (result == DialogResult.OK && !string.IsNullOrWhiteSpace(fbd.FileName))
+                        CMD("/C dism /Image:\"" + WimFolderPath + "\" /Get-ProvisioningPackageInfo /PackagePath:\"" + fbd.FileName.ToString() + "\"");
+                }
+            }
+            else if (checkBox2.Checked) //If it is a running windows installation
+            {
+                if (lang)
+                    MessageBox.Show("Hakkında bilgi almak için bilgisayardan bir paket seçin ppkg. (dosya!)");
+                else if (!lang)
+                    MessageBox.Show("Select a package on this computer to get the information about it. (ppkg file!)");
+                using (var fbd = new OpenFileDialog())
+                {
+                    DialogResult result = fbd.ShowDialog();
+                    if (result == DialogResult.OK && !string.IsNullOrWhiteSpace(fbd.FileName))
+                        CMD("/C dism /Online /Get-ProvisioningPackageInfo /PackagePath:\"" + fbd.FileName.ToString() + "\"");
+                }
+            }
+        }
+        private void button64_Click(object sender, EventArgs e)
+        {
+            if (lang)
+                MessageBox.Show("Hakkında bilgi almak için imajdan bir paket seçin ppkg. (dosya!)");
+            else if (!lang)
+                MessageBox.Show("Select a package in image to get the information about it. (ppkg file!)");
+            using (var fbd = new OpenFileDialog())
+            {
+                DialogResult result = fbd.ShowDialog();
+                if (result == DialogResult.OK && !string.IsNullOrWhiteSpace(fbd.FileName))
+                {
+                    if (lang)
+                        MessageBox.Show("Diski seçin. (Bir Disk Seçin!)");
+                    else if (!lang)
+                        MessageBox.Show("Specifies the drive that contains the Windows image. DISM scans this drive for any non-system files on this drive and incorporates them into the provisioning package. (Select a Drive!)");
+                    using (var fbd2 = new FolderBrowserDialog())
+                    {
+                        DialogResult result2 = fbd2.ShowDialog();
+                        if (result2 == DialogResult.OK && !string.IsNullOrWhiteSpace(fbd2.SelectedPath))
+                            if (!checkBox16.Checked)
+                                CMD("/C dism /Apply-CustomDataImage /CustomDataImage:\"" + fbd.FileName.ToString() + "\" /ImagePath:\"" + fbd2.SelectedPath.ToString() + "\"");
+                            else if (checkBox16.Checked)
+                                CMD("/C dism /Apply-CustomDataImage /CustomDataImage:\"" + fbd.FileName.ToString() + "\" /ImagePath:\"" + fbd2.SelectedPath.ToString() + "\" /SingleInstance");
+                    }
+                }
+                    
+            }
+        }
+        private void button65_Click(object sender, EventArgs e)
+        {
+            if (lang)
+                MessageBox.Show("Yerelleştirilmiş Windows Kurulum Kaynaklarını içeren Windows Yükleme Medyası klasörünü seçin! (Klasör! Örnek: /Source/tr-TR)");
+            else if (!lang)
+                MessageBox.Show("Select a location of the Windows installation media that contains the localized Windows Setup resources. (Folder! Example: /Source/en-US)");
+            using (var fbd = new FolderBrowserDialog())
+            {
+                DialogResult result = fbd.ShowDialog();
+                if (result == DialogResult.OK && !string.IsNullOrWhiteSpace(fbd.SelectedPath))
+                {
+                    if (lang)
+                        MessageBox.Show("Yerelleştirilmiş Windows Kurulum Kaynaklarını kopyalamak istediğiniz Windows Yükleme Medyası klasörünü seçin! (Klasör! Örnek: /wim/Source/tr-TR)");
+                    else if (!lang)
+                        MessageBox.Show("Select a location of the folder that you wanna copy localized Windows Setup Sources. (Folder! Example: /wim/Source/en-US)");
+                    using (var fbd2 = new FolderBrowserDialog())
+                    {
+                        DialogResult result2 = fbd2.ShowDialog();
+                        if (result2 == DialogResult.OK && !string.IsNullOrWhiteSpace(fbd2.SelectedPath))
+                                CMD("/C xcopy \"" + fbd.SelectedPath.ToString() + "\" \"" + fbd2.SelectedPath.ToString() + "\" /cherkyi");
+                    }
+
+                }
+
+
+            }
         }
         //For exiting app
         private void label2_Click(object sender, EventArgs e) { Application.Exit(); }
