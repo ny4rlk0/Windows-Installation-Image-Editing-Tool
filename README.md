@@ -6,6 +6,7 @@ Sysinternals Windows Image Tool. Sysinternals Windows Imaj Aracı.
 <br><img src="https://raw.githubusercontent.com/ny4rlk0/WindowsImageTool/main/15.png">
 <br>Example Windows ISO Source Folder Content
 <br><img src="https://raw.githubusercontent.com/ny4rlk0/WindowsImageTool/main/16.png">
+<br><img src="https://raw.githubusercontent.com/ny4rlk0/WindowsImageTool/main/18.png">
 <br><img src="https://raw.githubusercontent.com/ny4rlk0/WindowsImageTool/main/8.png">
 <br><img src="https://raw.githubusercontent.com/ny4rlk0/WindowsImageTool/main/9.png">
 <br><img src="https://raw.githubusercontent.com/ny4rlk0/WindowsImageTool/main/10.png">
