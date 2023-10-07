@@ -13,6 +13,7 @@ Sysinternals Windows Image Tool. Sysinternals Windows Imaj Aracı.
 <br><img src="https://raw.githubusercontent.com/ny4rlk0/WindowsImageTool/main/12.png">
 <br><img src="https://raw.githubusercontent.com/ny4rlk0/WindowsImageTool/main/13.png">
 <br><img src="https://raw.githubusercontent.com/ny4rlk0/WindowsImageTool/main/14.png">
+<br><img src="https://raw.githubusercontent.com/ny4rlk0/WindowsImageTool/main/17.png">
 <br><img src="https://raw.githubusercontent.com/ny4rlk0/WindowsImageTool/main/1.png">
 <br><img src="https://raw.githubusercontent.com/ny4rlk0/WindowsImageTool/main/2.png">
 <br><img src="https://raw.githubusercontent.com/ny4rlk0/WindowsImageTool/main/3.png">
