@@ -870,7 +870,7 @@ namespace WinPE_Tool
                     string programfiles_path = null;
                     string efi_pathx64 = null,efi_pathArm64=null,efi_pathx86=null;
                     string etfsboot_pathx64 = null, etfsboot_pathArm64 = null, etfsboot_pathx86 = null;
-                    string oscdimgx64=null,oscdimgArm64=null,oscdimgx86=null;
+                    string oscdimgPath = null;
                     string isoFolder = null;
                     string addoptions = "";
                     string bootOrder = null;//"-m -yo\""+startup_path + "bootOrder.txt\" ";//Deleting space in right side of this text causes isos not booting
@@ -923,16 +923,19 @@ namespace WinPE_Tool
                     }
                     if (programfiles_path!=null||programfiles_path!="")
                     {
-                        oscdimgx64 = programfiles_path + "\\Windows Kits\\"+textBox8.Text.ToString()+"\\Assessment and Deployment Kit\\Deployment Tools\\amd64\\Oscdimg\\oscdimg.exe";
-                        oscdimgArm64 = programfiles_path + "\\Windows Kits\\"+textBox8.Text.ToString()+"\\Assessment and Deployment Kit\\Deployment Tools\\arm64\\Oscdimg\\oscdimg.exe";
-                        oscdimgx86 = programfiles_path + "\\Windows Kits\\"+textBox8.Text.ToString()+"\\Assessment and Deployment Kit\\Deployment Tools\\x86\\Oscdimg\\oscdimg.exe";
+                        if (radioButton8.Checked)
+                            oscdimgPath = programfiles_path + "\\Windows Kits\\"+textBox8.Text.ToString()+"\\Assessment and Deployment Kit\\Deployment Tools\\amd64\\Oscdimg\\oscdimg.exe";
+                        else if (radioButton7.Checked)
+                            oscdimgPath = programfiles_path + "\\Windows Kits\\"+textBox8.Text.ToString()+"\\Assessment and Deployment Kit\\Deployment Tools\\arm64\\Oscdimg\\oscdimg.exe";
+                        else if (radioButton6.Checked)
+                            oscdimgPath = programfiles_path + "\\Windows Kits\\"+textBox8.Text.ToString()+"\\Assessment and Deployment Kit\\Deployment Tools\\x86\\Oscdimg\\oscdimg.exe";
                     }
-                    if (File.Exists(oscdimgx64)&&File.Exists(efi_pathx64)&& File.Exists(etfsboot_pathx64)&& isoFolder!=null&& isoFolder != ""&&radioButton3.Checked && efi_pathx64 != null && programfiles_path != null && programfiles_path != ""&&oscdimgx64!=null)//x64
-                        oscdimg(bootOrder + "-bootdata:2#p0,e,b\"" + etfsboot_pathx64 + "\"#pEF,e,b\""+ efi_pathx64 + "\" -u1 -udfver102 \"" + isoFolder + "\" \"" + startup_path + "Created.ISO\"",oscdimgx64);
-                    else if (File.Exists(oscdimgArm64)&&File.Exists(efi_pathArm64) && File.Exists(etfsboot_pathArm64) && isoFolder != null && isoFolder != "" && radioButton4.Checked && efi_pathArm64 != null && programfiles_path != null && programfiles_path != ""&&oscdimgArm64!=null)//Arm64
-                        oscdimg(bootOrder + "-bootdata:2#p0,e,b\"" +  etfsboot_pathArm64 + "\"#pEF,e,b\"" + efi_pathArm64 + "\" -u1 -udfver102 \"" + isoFolder + "\" \"" + startup_path + "Created.ISO\"", oscdimgArm64);
-                    else if (File.Exists(oscdimgx86)&&File.Exists(efi_pathx86) && File.Exists(etfsboot_pathx86) && isoFolder != null && isoFolder != "" && radioButton5.Checked && efi_pathx86 != null && programfiles_path != null && programfiles_path != ""&&oscdimgx86!=null)//x86
-                        oscdimg(bootOrder + "-bootdata:2#p0,e,b\"" +  etfsboot_pathx86 + "\"#pEF,e,b\"" + efi_pathx86 + "\" -u1 -udfver102 \"" + isoFolder + "\" \"" + startup_path + "Created.ISO\"", oscdimgx86);
+                    if (File.Exists(oscdimgPath)&&File.Exists(efi_pathx64)&& File.Exists(etfsboot_pathx64)&& isoFolder!=null&& isoFolder != ""&&radioButton3.Checked && efi_pathx64 != null && programfiles_path != null && programfiles_path != ""&&oscdimgPath!=null)//x64
+                        oscdimg(bootOrder + "-bootdata:2#p0,e,b\"" + etfsboot_pathx64 + "\"#pEF,e,b\""+ efi_pathx64 + "\" -u1 -udfver102 \"" + isoFolder + "\" \"" + startup_path + "Created.ISO\"",oscdimgPath);
+                    else if (File.Exists(oscdimgPath)&&File.Exists(efi_pathArm64) && File.Exists(etfsboot_pathArm64) && isoFolder != null && isoFolder != "" && radioButton4.Checked && efi_pathArm64 != null && programfiles_path != null && programfiles_path != ""&&oscdimgPath!=null)//Arm64
+                        oscdimg(bootOrder + "-bootdata:2#p0,e,b\"" +  etfsboot_pathArm64 + "\"#pEF,e,b\"" + efi_pathArm64 + "\" -u1 -udfver102 \"" + isoFolder + "\" \"" + startup_path + "Created.ISO\"", oscdimgPath);
+                    else if (File.Exists(oscdimgPath)&&File.Exists(efi_pathx86) && File.Exists(etfsboot_pathx86) && isoFolder != null && isoFolder != "" && radioButton5.Checked && efi_pathx86 != null && programfiles_path != null && programfiles_path != ""&&oscdimgPath!=null)//x86
+                        oscdimg(bootOrder + "-bootdata:2#p0,e,b\"" +  etfsboot_pathx86 + "\"#pEF,e,b\"" + efi_pathx86 + "\" -u1 -udfver102 \"" + isoFolder + "\" \"" + startup_path + "Created.ISO\"", oscdimgPath);
 
                 }
             }
@@ -1050,7 +1053,7 @@ namespace WinPE_Tool
         private void button66_Click(object sender, EventArgs e)
         {
             string programfiles_path = null;
-            string oscdimgx64 = null, oscdimgArm64 = null, oscdimgx86 = null;
+            string oscdimgPath = null;
             try { programfiles_path = upupdowndownleftrightleftrightbastart_ProgramFilesx86(); }
             catch (Exception) { }
             if (programfiles_path == null || programfiles_path == "")
@@ -1065,16 +1068,15 @@ namespace WinPE_Tool
             }
             if (programfiles_path != null || programfiles_path != "")
             {
-                oscdimgx64 = programfiles_path + "\\Windows Kits\\" + textBox8.Text.ToString() + "\\Assessment and Deployment Kit\\Deployment Tools\\amd64\\Oscdimg\\oscdimg.exe";
-                oscdimgArm64 = programfiles_path + "\\Windows Kits\\" + textBox8.Text.ToString() + "\\Assessment and Deployment Kit\\Deployment Tools\\arm64\\Oscdimg\\oscdimg.exe";
-                oscdimgx86 = programfiles_path + "\\Windows Kits\\" + textBox8.Text.ToString() + "\\Assessment and Deployment Kit\\Deployment Tools\\x86\\Oscdimg\\oscdimg.exe";
+                if (radioButton8.Checked)
+                    oscdimgPath = programfiles_path + "\\Windows Kits\\" + textBox8.Text.ToString() + "\\Assessment and Deployment Kit\\Deployment Tools\\amd64\\Oscdimg\\oscdimg.exe";
+                else if (radioButton7.Checked)
+                    oscdimgPath = programfiles_path + "\\Windows Kits\\" + textBox8.Text.ToString() + "\\Assessment and Deployment Kit\\Deployment Tools\\arm64\\Oscdimg\\oscdimg.exe";
+                else if (radioButton6.Checked)
+                    oscdimgPath = programfiles_path + "\\Windows Kits\\" + textBox8.Text.ToString() + "\\Assessment and Deployment Kit\\Deployment Tools\\x86\\Oscdimg\\oscdimg.exe";
             }
-            if (File.Exists(oscdimgx64) && radioButton3.Checked && oscdimgx64 != null && programfiles_path != null && programfiles_path != "")//x64
-                oscdimg(textBox12.Text.ToString(), oscdimgx64);
-            else if (File.Exists(oscdimgArm64) && radioButton4.Checked && programfiles_path != null && programfiles_path != "" && oscdimgArm64 != null)//Arm64
-                oscdimg(textBox12.Text.ToString(), oscdimgArm64);
-            else if (File.Exists(oscdimgx86) && radioButton5.Checked && programfiles_path != null && programfiles_path != "" && oscdimgx86 != null)//x86
-                oscdimg(textBox12.Text.ToString(), oscdimgx86);
+            if (File.Exists(oscdimgPath) && programfiles_path != null && programfiles_path != "" && oscdimgPath != null)
+                oscdimg(textBox12.Text.ToString(), oscdimgPath);
         }
         //For exiting app
         private void label2_Click(object sender, EventArgs e) { Application.Exit(); }

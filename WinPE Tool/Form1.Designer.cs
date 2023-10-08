@@ -181,6 +181,10 @@
             this.textBox12 = new System.Windows.Forms.TextBox();
             this.button64 = new System.Windows.Forms.Button();
             this.label22 = new System.Windows.Forms.Label();
+            this.groupBox17 = new System.Windows.Forms.GroupBox();
+            this.radioButton6 = new System.Windows.Forms.RadioButton();
+            this.radioButton7 = new System.Windows.Forms.RadioButton();
+            this.radioButton8 = new System.Windows.Forms.RadioButton();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.groupBox7.SuspendLayout();
@@ -210,6 +214,7 @@
             this.tabPage7.SuspendLayout();
             this.tabPage8.SuspendLayout();
             this.groupBox15.SuspendLayout();
+            this.groupBox17.SuspendLayout();
             this.SuspendLayout();
             // 
             // label1
@@ -1994,6 +1999,7 @@
             this.tabPage8.Controls.Add(this.label16);
             this.tabPage8.Controls.Add(this.textBox8);
             this.tabPage8.Controls.Add(this.checkBox15);
+            this.tabPage8.Controls.Add(this.groupBox17);
             this.tabPage8.Controls.Add(this.groupBox15);
             this.tabPage8.Controls.Add(this.button59);
             this.tabPage8.Controls.Add(this.button57);
@@ -2055,10 +2061,10 @@
             // 
             this.checkBox15.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.checkBox15.AutoSize = true;
-            this.checkBox15.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.checkBox15.Location = new System.Drawing.Point(1096, 294);
+            this.checkBox15.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.checkBox15.Location = new System.Drawing.Point(1102, 274);
             this.checkBox15.Name = "checkBox15";
-            this.checkBox15.Size = new System.Drawing.Size(174, 30);
+            this.checkBox15.Size = new System.Drawing.Size(134, 24);
             this.checkBox15.TabIndex = 20;
             this.checkBox15.Text = "Use boot order";
             this.checkBox15.UseVisualStyleBackColor = true;
@@ -2070,22 +2076,23 @@
             this.groupBox15.Controls.Add(this.radioButton5);
             this.groupBox15.Controls.Add(this.radioButton4);
             this.groupBox15.Controls.Add(this.radioButton3);
+            this.groupBox15.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.groupBox15.ForeColor = System.Drawing.Color.White;
             this.groupBox15.Location = new System.Drawing.Point(1096, 150);
             this.groupBox15.Name = "groupBox15";
-            this.groupBox15.Size = new System.Drawing.Size(174, 138);
+            this.groupBox15.Size = new System.Drawing.Size(174, 105);
             this.groupBox15.TabIndex = 19;
             this.groupBox15.TabStop = false;
-            this.groupBox15.Text = "Architecture";
+            this.groupBox15.Text = "Boot Architecture";
             // 
             // radioButton5
             // 
             this.radioButton5.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.radioButton5.AutoSize = true;
-            this.radioButton5.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.radioButton5.Location = new System.Drawing.Point(6, 100);
+            this.radioButton5.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.radioButton5.Location = new System.Drawing.Point(6, 82);
             this.radioButton5.Name = "radioButton5";
-            this.radioButton5.Size = new System.Drawing.Size(65, 30);
+            this.radioButton5.Size = new System.Drawing.Size(48, 21);
             this.radioButton5.TabIndex = 18;
             this.radioButton5.Text = "x86";
             this.radioButton5.UseVisualStyleBackColor = true;
@@ -2094,10 +2101,10 @@
             // 
             this.radioButton4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.radioButton4.AutoSize = true;
-            this.radioButton4.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.radioButton4.Location = new System.Drawing.Point(6, 64);
+            this.radioButton4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.radioButton4.Location = new System.Drawing.Point(6, 55);
             this.radioButton4.Name = "radioButton4";
-            this.radioButton4.Size = new System.Drawing.Size(95, 30);
+            this.radioButton4.Size = new System.Drawing.Size(67, 21);
             this.radioButton4.TabIndex = 18;
             this.radioButton4.Text = "Arm64";
             this.radioButton4.UseVisualStyleBackColor = true;
@@ -2107,10 +2114,10 @@
             this.radioButton3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.radioButton3.AutoSize = true;
             this.radioButton3.Checked = true;
-            this.radioButton3.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.radioButton3.Location = new System.Drawing.Point(6, 31);
+            this.radioButton3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.radioButton3.Location = new System.Drawing.Point(6, 28);
             this.radioButton3.Name = "radioButton3";
-            this.radioButton3.Size = new System.Drawing.Size(65, 30);
+            this.radioButton3.Size = new System.Drawing.Size(48, 21);
             this.radioButton3.TabIndex = 18;
             this.radioButton3.TabStop = true;
             this.radioButton3.Text = "x64";
@@ -2190,17 +2197,17 @@
             // 
             // textBox12
             // 
-            this.textBox12.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.textBox12.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.textBox12.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBox12.Location = new System.Drawing.Point(190, 501);
             this.textBox12.Name = "textBox12";
             this.textBox12.Size = new System.Drawing.Size(757, 22);
             this.textBox12.TabIndex = 24;
-            this.textBox12.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // button64
             // 
-            this.button64.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.button64.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.button64.BackColor = System.Drawing.Color.DimGray;
             this.button64.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button64.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
@@ -2214,6 +2221,7 @@
             // 
             // label22
             // 
+            this.label22.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.label22.AutoSize = true;
             this.label22.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.label22.Location = new System.Drawing.Point(3, 504);
@@ -2221,6 +2229,60 @@
             this.label22.Size = new System.Drawing.Size(181, 17);
             this.label22.TabIndex = 26;
             this.label22.Text = "Custom Oscdimg Command";
+            // 
+            // groupBox17
+            // 
+            this.groupBox17.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.groupBox17.BackColor = System.Drawing.Color.Black;
+            this.groupBox17.Controls.Add(this.radioButton6);
+            this.groupBox17.Controls.Add(this.radioButton7);
+            this.groupBox17.Controls.Add(this.radioButton8);
+            this.groupBox17.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.groupBox17.ForeColor = System.Drawing.Color.White;
+            this.groupBox17.Location = new System.Drawing.Point(1096, 313);
+            this.groupBox17.Name = "groupBox17";
+            this.groupBox17.Size = new System.Drawing.Size(174, 105);
+            this.groupBox17.TabIndex = 19;
+            this.groupBox17.TabStop = false;
+            this.groupBox17.Text = "Oscdimg Arch";
+            // 
+            // radioButton6
+            // 
+            this.radioButton6.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.radioButton6.AutoSize = true;
+            this.radioButton6.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.radioButton6.Location = new System.Drawing.Point(6, 82);
+            this.radioButton6.Name = "radioButton6";
+            this.radioButton6.Size = new System.Drawing.Size(48, 21);
+            this.radioButton6.TabIndex = 18;
+            this.radioButton6.Text = "x86";
+            this.radioButton6.UseVisualStyleBackColor = true;
+            // 
+            // radioButton7
+            // 
+            this.radioButton7.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.radioButton7.AutoSize = true;
+            this.radioButton7.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.radioButton7.Location = new System.Drawing.Point(6, 55);
+            this.radioButton7.Name = "radioButton7";
+            this.radioButton7.Size = new System.Drawing.Size(67, 21);
+            this.radioButton7.TabIndex = 18;
+            this.radioButton7.Text = "Arm64";
+            this.radioButton7.UseVisualStyleBackColor = true;
+            // 
+            // radioButton8
+            // 
+            this.radioButton8.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.radioButton8.AutoSize = true;
+            this.radioButton8.Checked = true;
+            this.radioButton8.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.radioButton8.Location = new System.Drawing.Point(6, 28);
+            this.radioButton8.Name = "radioButton8";
+            this.radioButton8.Size = new System.Drawing.Size(48, 21);
+            this.radioButton8.TabIndex = 18;
+            this.radioButton8.TabStop = true;
+            this.radioButton8.Text = "x64";
+            this.radioButton8.UseVisualStyleBackColor = true;
             // 
             // Form1
             // 
@@ -2284,6 +2346,8 @@
             this.tabPage8.PerformLayout();
             this.groupBox15.ResumeLayout(false);
             this.groupBox15.PerformLayout();
+            this.groupBox17.ResumeLayout(false);
+            this.groupBox17.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -2443,6 +2507,10 @@
         private System.Windows.Forms.TextBox textBox12;
         private System.Windows.Forms.Button button64;
         private System.Windows.Forms.Label label22;
+        private System.Windows.Forms.GroupBox groupBox17;
+        private System.Windows.Forms.RadioButton radioButton6;
+        private System.Windows.Forms.RadioButton radioButton7;
+        private System.Windows.Forms.RadioButton radioButton8;
     }
 }
 
