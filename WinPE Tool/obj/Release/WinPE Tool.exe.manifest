@@ -43,14 +43,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="WinPE Tool.exe" size="157656">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="WinPE Tool.exe" size="158168">
       <assemblyIdentity name="WinPE Tool" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>7G47csY+9mV7U09FqEV/I0iKgZvLS/5zz026GTUBFZs=</dsig:DigestValue>
+        <dsig:DigestValue>NL/nNhZNL1VdEfCNQqZMigE0c0ytFWOaGEt6KRu6nxQ=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>

@@ -176,6 +176,8 @@
             this.button62 = new System.Windows.Forms.Button();
             this.checkBox16 = new System.Windows.Forms.CheckBox();
             this.button63 = new System.Windows.Forms.Button();
+            this.textBox11 = new System.Windows.Forms.TextBox();
+            this.label21 = new System.Windows.Forms.Label();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.groupBox7.SuspendLayout();
@@ -1918,6 +1920,8 @@
             // tabPage8
             // 
             this.tabPage8.BackColor = System.Drawing.Color.Black;
+            this.tabPage8.Controls.Add(this.label21);
+            this.tabPage8.Controls.Add(this.textBox11);
             this.tabPage8.Controls.Add(this.label16);
             this.tabPage8.Controls.Add(this.textBox8);
             this.tabPage8.Controls.Add(this.checkBox15);
@@ -2156,6 +2160,27 @@
             this.button63.UseVisualStyleBackColor = false;
             this.button63.Click += new System.EventHandler(this.button65_Click);
             // 
+            // textBox11
+            // 
+            this.textBox11.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.textBox11.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBox11.Location = new System.Drawing.Point(1096, 444);
+            this.textBox11.Name = "textBox11";
+            this.textBox11.Size = new System.Drawing.Size(174, 22);
+            this.textBox11.TabIndex = 21;
+            this.textBox11.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // label21
+            // 
+            this.label21.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.label21.AutoSize = true;
+            this.label21.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label21.Location = new System.Drawing.Point(1098, 381);
+            this.label21.Name = "label21";
+            this.label21.Size = new System.Drawing.Size(165, 60);
+            this.label21.TabIndex = 22;
+            this.label21.Text = "Add options to\r\nOscdimg \r\n(-m is already present)";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -2372,6 +2397,8 @@
         private System.Windows.Forms.Button button62;
         private System.Windows.Forms.CheckBox checkBox16;
         private System.Windows.Forms.Button button63;
+        private System.Windows.Forms.Label label21;
+        private System.Windows.Forms.TextBox textBox11;
     }
 }
 

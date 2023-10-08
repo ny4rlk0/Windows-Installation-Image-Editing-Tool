@@ -871,10 +871,21 @@ namespace WinPE_Tool
                     string etfsboot_pathx64 = null, etfsboot_pathArm64 = null, etfsboot_pathx86 = null;
                     string oscdimgx64=null,oscdimgArm64=null,oscdimgx86=null;
                     string isoFolder = null;
+                    string addoptions = "";
                     string bootOrder = "-m -yo\""+startup_path + "bootOrder.txt\" ";//Deleting space in right side of this text causes isos not booting
                     //time spend because of this = 2 hours FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
                     if (!checkBox15.Checked)
-                        bootOrder = "-m ";
+                    {
+                        if (textBox11.Text != "" && textBox11.Text != null&&textBox11.Text!=" ")
+                            bootOrder = "-m " + addoptions + " ";
+                        else bootOrder = "-m ";
+                    }
+                    else if (checkBox15.Checked)
+                    {
+                        if (textBox11.Text != "" && textBox11.Text != null && textBox11.Text != " ")
+                            bootOrder="-m "+addoptions+" -yo\"" + startup_path + "bootOrder.txt\" ";
+                        else bootOrder = "-m -yo\"" + startup_path + "bootOrder.txt\" ";
+                    }
                     try { programfiles_path = upupdowndownleftrightleftrightbastart_ProgramFilesx86();}
                     catch (Exception) { }
                     if (programfiles_path == null || programfiles_path=="")
@@ -1048,7 +1059,7 @@ namespace WinPE_Tool
         ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
         ///                                                                                                                                          ///
         ///                                                                                                                                          ///
-        ///                  N Y 4 R L K 0                                                                                                           ///
+        ///                  N Y 4 R L K 0    08.10.2023 03:19:19                                                                                    ///
         ///                                                                                                                                          ///
         ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
         /*

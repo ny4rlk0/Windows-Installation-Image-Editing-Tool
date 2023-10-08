@@ -117,18 +117,6 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="richTextBox1.Text" xml:space="preserve">
-    <value>Gereksinimleri indirin (ADK ve PE Addon)
-İndirdikleriniz ile düzenleyeceğiniz imaj versiyonu aynı olmak zorundadır.
-
-https://learn.microsoft.com/en-us/windows-hardware/get-started/adk-install
-
-Bu alandan beklenilen veri kopyalama yolu ilgili veriyi seçip klavyeden
-CTRL + C basmaktır.
-
-Geliştirici: https://github.com/ny4rlk0
-https://learn.microsoft.com/en-us/windows-hardware/manufacture/desktop/default-input-locales-for-windows-language-packs?view=windows-10</value>
-  </data>
   <data name="richTextBox3.Text" xml:space="preserve">
     <value>boot\bcd
 boot\boot.sdi
@@ -171,6 +159,18 @@ sources\boot.wim
 bootmgr
 bootmgr.efi
 </value>
+  </data>
+  <data name="richTextBox1.Text" xml:space="preserve">
+    <value>Gereksinimleri indirin (ADK ve PE Addon)
+İndirdikleriniz ile düzenleyeceğiniz imaj versiyonu aynı olmak zorundadır.
+
+https://learn.microsoft.com/en-us/windows-hardware/get-started/adk-install
+
+Bu alandan beklenilen veri kopyalama yolu ilgili veriyi seçip klavyeden
+CTRL + C basmaktır.
+
+Geliştirici: https://github.com/ny4rlk0
+https://learn.microsoft.com/en-us/windows-hardware/manufacture/desktop/default-input-locales-for-windows-language-packs?view=windows-10</value>
   </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
