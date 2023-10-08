@@ -13,6 +13,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.IO;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement;
+using System.Diagnostics.Eventing.Reader;
 
 namespace WinPE_Tool
 {
@@ -872,19 +873,19 @@ namespace WinPE_Tool
                     string oscdimgx64=null,oscdimgArm64=null,oscdimgx86=null;
                     string isoFolder = null;
                     string addoptions = "";
-                    string bootOrder = "-m -yo\""+startup_path + "bootOrder.txt\" ";//Deleting space in right side of this text causes isos not booting
+                    string bootOrder = null;//"-m -yo\""+startup_path + "bootOrder.txt\" ";//Deleting space in right side of this text causes isos not booting
                     //time spend because of this = 2 hours FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
                     if (!checkBox15.Checked)
                     {
                         if (textBox11.Text != "" && textBox11.Text != null&&textBox11.Text!=" ")
-                            bootOrder = "-m " + addoptions + " ";
-                        else bootOrder = "-m ";
+                            bootOrder = addoptions + " ";
+                        else bootOrder = "";
                     }
                     else if (checkBox15.Checked)
                     {
                         if (textBox11.Text != "" && textBox11.Text != null && textBox11.Text != " ")
-                            bootOrder="-m "+addoptions+" -yo\"" + startup_path + "bootOrder.txt\" ";
-                        else bootOrder = "-m -yo\"" + startup_path + "bootOrder.txt\" ";
+                            bootOrder=addoptions+" -yo\"" + startup_path + "bootOrder.txt\" ";
+                        else bootOrder = "-yo\"" + startup_path + "bootOrder.txt\" ";
                     }
                     try { programfiles_path = upupdowndownleftrightleftrightbastart_ProgramFilesx86();}
                     catch (Exception) { }
@@ -932,6 +933,7 @@ namespace WinPE_Tool
                         oscdimg(bootOrder + "-bootdata:2#p0,e,b\"" +  etfsboot_pathArm64 + "\"#pEF,e,b\"" + efi_pathArm64 + "\" -u1 -udfver102 \"" + isoFolder + "\" \"" + startup_path + "Created.ISO\"", oscdimgArm64);
                     else if (File.Exists(oscdimgx86)&&File.Exists(efi_pathx86) && File.Exists(etfsboot_pathx86) && isoFolder != null && isoFolder != "" && radioButton5.Checked && efi_pathx86 != null && programfiles_path != null && programfiles_path != ""&&oscdimgx86!=null)//x86
                         oscdimg(bootOrder + "-bootdata:2#p0,e,b\"" +  etfsboot_pathx86 + "\"#pEF,e,b\"" + efi_pathx86 + "\" -u1 -udfver102 \"" + isoFolder + "\" \"" + startup_path + "Created.ISO\"", oscdimgx86);
+
                 }
             }
             catch (Exception ex) { MessageBox.Show(ex.ToString()); }
@@ -1019,7 +1021,6 @@ namespace WinPE_Tool
                                 CMD("/C dism /Apply-CustomDataImage /CustomDataImage:\"" + fbd.FileName.ToString() + "\" /ImagePath:\"" + fbd2.SelectedPath.ToString() + "\" /SingleInstance");
                     }
                 }
-                    
             }
         }
         private void button65_Click(object sender, EventArgs e)
@@ -1043,11 +1044,37 @@ namespace WinPE_Tool
                         if (result2 == DialogResult.OK && !string.IsNullOrWhiteSpace(fbd2.SelectedPath))
                                 CMD("/C xcopy \"" + fbd.SelectedPath.ToString() + "\" \"" + fbd2.SelectedPath.ToString() + "\" /cherkyi");
                     }
-
                 }
-
-
             }
+        }
+        private void button66_Click(object sender, EventArgs e)
+        {
+            string programfiles_path = null;
+            string oscdimgx64 = null, oscdimgArm64 = null, oscdimgx86 = null;
+            try { programfiles_path = upupdowndownleftrightleftrightbastart_ProgramFilesx86(); }
+            catch (Exception) { }
+            if (programfiles_path == null || programfiles_path == "")
+            {
+                MessageBox.Show("ProgramFiles (x86)");
+                using (var fbd = new FolderBrowserDialog())
+                {
+                    DialogResult result = fbd.ShowDialog();
+                    if (result == DialogResult.OK && !string.IsNullOrWhiteSpace(fbd.SelectedPath))
+                        programfiles_path = fbd.SelectedPath.ToString();
+                }
+            }
+            if (programfiles_path != null || programfiles_path != "")
+            {
+                oscdimgx64 = programfiles_path + "\\Windows Kits\\" + textBox8.Text.ToString() + "\\Assessment and Deployment Kit\\Deployment Tools\\amd64\\Oscdimg\\oscdimg.exe";
+                oscdimgArm64 = programfiles_path + "\\Windows Kits\\" + textBox8.Text.ToString() + "\\Assessment and Deployment Kit\\Deployment Tools\\arm64\\Oscdimg\\oscdimg.exe";
+                oscdimgx86 = programfiles_path + "\\Windows Kits\\" + textBox8.Text.ToString() + "\\Assessment and Deployment Kit\\Deployment Tools\\x86\\Oscdimg\\oscdimg.exe";
+            }
+            if (File.Exists(oscdimgx64) && radioButton3.Checked && oscdimgx64 != null && programfiles_path != null && programfiles_path != "")//x64
+                oscdimg(textBox12.Text.ToString(), oscdimgx64);
+            else if (File.Exists(oscdimgArm64) && radioButton4.Checked && programfiles_path != null && programfiles_path != "" && oscdimgArm64 != null)//Arm64
+                oscdimg(textBox12.Text.ToString(), oscdimgArm64);
+            else if (File.Exists(oscdimgx86) && radioButton5.Checked && programfiles_path != null && programfiles_path != "" && oscdimgx86 != null)//x86
+                oscdimg(textBox12.Text.ToString(), oscdimgx86);
         }
         //For exiting app
         private void label2_Click(object sender, EventArgs e) { Application.Exit(); }
@@ -1059,7 +1086,7 @@ namespace WinPE_Tool
         ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
         ///                                                                                                                                          ///
         ///                                                                                                                                          ///
-        ///                  N Y 4 R L K 0    08.10.2023 03:19:19                                                                                    ///
+        ///                  N Y 4 R L K 0    08.10.2023 13:28:52                                                                                    ///
         ///                                                                                                                                          ///
         ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
         /*

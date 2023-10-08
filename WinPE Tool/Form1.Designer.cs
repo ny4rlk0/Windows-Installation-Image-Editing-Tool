@@ -36,6 +36,7 @@
             this.label4 = new System.Windows.Forms.Label();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.button47 = new System.Windows.Forms.Button();
             this.label12 = new System.Windows.Forms.Label();
             this.checkBox2 = new System.Windows.Forms.CheckBox();
             this.textBox2 = new System.Windows.Forms.TextBox();
@@ -70,6 +71,7 @@
             this.button14 = new System.Windows.Forms.Button();
             this.button10 = new System.Windows.Forms.Button();
             this.button9 = new System.Windows.Forms.Button();
+            this.button48 = new System.Windows.Forms.Button();
             this.button8 = new System.Windows.Forms.Button();
             this.button6 = new System.Windows.Forms.Button();
             this.tabPage3 = new System.Windows.Forms.TabPage();
@@ -104,7 +106,9 @@
             this.button25 = new System.Windows.Forms.Button();
             this.tabPage5 = new System.Windows.Forms.TabPage();
             this.groupBox9 = new System.Windows.Forms.GroupBox();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.groupBox11 = new System.Windows.Forms.GroupBox();
+            this.button63 = new System.Windows.Forms.Button();
             this.button35 = new System.Windows.Forms.Button();
             this.groupBox10 = new System.Windows.Forms.GroupBox();
             this.numericUpDown3 = new System.Windows.Forms.NumericUpDown();
@@ -120,16 +124,31 @@
             this.button40 = new System.Windows.Forms.Button();
             this.button39 = new System.Windows.Forms.Button();
             this.button38 = new System.Windows.Forms.Button();
+            this.button52 = new System.Windows.Forms.Button();
+            this.button56 = new System.Windows.Forms.Button();
+            this.button55 = new System.Windows.Forms.Button();
+            this.button54 = new System.Windows.Forms.Button();
+            this.button53 = new System.Windows.Forms.Button();
+            this.button51 = new System.Windows.Forms.Button();
             this.button33 = new System.Windows.Forms.Button();
             this.tabPage6 = new System.Windows.Forms.TabPage();
+            this.groupBox16 = new System.Windows.Forms.GroupBox();
+            this.checkBox16 = new System.Windows.Forms.CheckBox();
+            this.button62 = new System.Windows.Forms.Button();
+            this.button60 = new System.Windows.Forms.Button();
+            this.button61 = new System.Windows.Forms.Button();
             this.groupBox12 = new System.Windows.Forms.GroupBox();
             this.groupBox14 = new System.Windows.Forms.GroupBox();
             this.label20 = new System.Windows.Forms.Label();
             this.textBox10 = new System.Windows.Forms.TextBox();
+            this.button46 = new System.Windows.Forms.Button();
             this.button44 = new System.Windows.Forms.Button();
             this.groupBox13 = new System.Windows.Forms.GroupBox();
             this.checkBox11 = new System.Windows.Forms.CheckBox();
             this.textBox9 = new System.Windows.Forms.TextBox();
+            this.checkBox13 = new System.Windows.Forms.CheckBox();
+            this.checkBox14 = new System.Windows.Forms.CheckBox();
+            this.checkBox12 = new System.Windows.Forms.CheckBox();
             this.checkBox8 = new System.Windows.Forms.CheckBox();
             this.label18 = new System.Windows.Forms.Label();
             this.checkBox9 = new System.Windows.Forms.CheckBox();
@@ -138,46 +157,30 @@
             this.button41 = new System.Windows.Forms.Button();
             this.numericUpDown4 = new System.Windows.Forms.NumericUpDown();
             this.label19 = new System.Windows.Forms.Label();
-            this.button42 = new System.Windows.Forms.Button();
-            this.richTextBox1 = new System.Windows.Forms.RichTextBox();
             this.button45 = new System.Windows.Forms.Button();
-            this.button46 = new System.Windows.Forms.Button();
-            this.checkBox12 = new System.Windows.Forms.CheckBox();
-            this.checkBox13 = new System.Windows.Forms.CheckBox();
-            this.checkBox14 = new System.Windows.Forms.CheckBox();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.button47 = new System.Windows.Forms.Button();
-            this.button48 = new System.Windows.Forms.Button();
+            this.button42 = new System.Windows.Forms.Button();
             this.tabPage7 = new System.Windows.Forms.TabPage();
-            this.richTextBox2 = new System.Windows.Forms.RichTextBox();
-            this.button49 = new System.Windows.Forms.Button();
             this.button50 = new System.Windows.Forms.Button();
-            this.button51 = new System.Windows.Forms.Button();
-            this.button52 = new System.Windows.Forms.Button();
-            this.button53 = new System.Windows.Forms.Button();
-            this.button54 = new System.Windows.Forms.Button();
-            this.button55 = new System.Windows.Forms.Button();
-            this.button56 = new System.Windows.Forms.Button();
+            this.button49 = new System.Windows.Forms.Button();
+            this.richTextBox2 = new System.Windows.Forms.RichTextBox();
             this.tabPage8 = new System.Windows.Forms.TabPage();
-            this.richTextBox3 = new System.Windows.Forms.RichTextBox();
+            this.label21 = new System.Windows.Forms.Label();
+            this.textBox11 = new System.Windows.Forms.TextBox();
+            this.label16 = new System.Windows.Forms.Label();
+            this.textBox8 = new System.Windows.Forms.TextBox();
+            this.checkBox15 = new System.Windows.Forms.CheckBox();
+            this.groupBox15 = new System.Windows.Forms.GroupBox();
+            this.radioButton5 = new System.Windows.Forms.RadioButton();
+            this.radioButton4 = new System.Windows.Forms.RadioButton();
+            this.radioButton3 = new System.Windows.Forms.RadioButton();
+            this.button59 = new System.Windows.Forms.Button();
             this.button57 = new System.Windows.Forms.Button();
             this.button58 = new System.Windows.Forms.Button();
-            this.button59 = new System.Windows.Forms.Button();
-            this.radioButton3 = new System.Windows.Forms.RadioButton();
-            this.groupBox15 = new System.Windows.Forms.GroupBox();
-            this.radioButton4 = new System.Windows.Forms.RadioButton();
-            this.radioButton5 = new System.Windows.Forms.RadioButton();
-            this.checkBox15 = new System.Windows.Forms.CheckBox();
-            this.textBox8 = new System.Windows.Forms.TextBox();
-            this.label16 = new System.Windows.Forms.Label();
-            this.groupBox16 = new System.Windows.Forms.GroupBox();
-            this.button61 = new System.Windows.Forms.Button();
-            this.button60 = new System.Windows.Forms.Button();
-            this.button62 = new System.Windows.Forms.Button();
-            this.checkBox16 = new System.Windows.Forms.CheckBox();
-            this.button63 = new System.Windows.Forms.Button();
-            this.textBox11 = new System.Windows.Forms.TextBox();
-            this.label21 = new System.Windows.Forms.Label();
+            this.richTextBox3 = new System.Windows.Forms.RichTextBox();
+            this.richTextBox1 = new System.Windows.Forms.RichTextBox();
+            this.textBox12 = new System.Windows.Forms.TextBox();
+            this.button64 = new System.Windows.Forms.Button();
+            this.label22 = new System.Windows.Forms.Label();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.groupBox7.SuspendLayout();
@@ -199,6 +202,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown3)).BeginInit();
             this.groupBox8.SuspendLayout();
             this.tabPage6.SuspendLayout();
+            this.groupBox16.SuspendLayout();
             this.groupBox12.SuspendLayout();
             this.groupBox14.SuspendLayout();
             this.groupBox13.SuspendLayout();
@@ -206,7 +210,6 @@
             this.tabPage7.SuspendLayout();
             this.tabPage8.SuspendLayout();
             this.groupBox15.SuspendLayout();
-            this.groupBox16.SuspendLayout();
             this.SuspendLayout();
             // 
             // label1
@@ -314,6 +317,19 @@
             this.tabPage1.Size = new System.Drawing.Size(1273, 529);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Wim Bağla / Kaldır";
+            // 
+            // button47
+            // 
+            this.button47.BackColor = System.Drawing.Color.DimGray;
+            this.button47.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button47.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.button47.Location = new System.Drawing.Point(574, 120);
+            this.button47.Name = "button47";
+            this.button47.Size = new System.Drawing.Size(306, 42);
+            this.button47.TabIndex = 15;
+            this.button47.Text = "Change to English Language";
+            this.button47.UseVisualStyleBackColor = false;
+            this.button47.Click += new System.EventHandler(this.button49_Click);
             // 
             // label12
             // 
@@ -742,6 +758,20 @@
             this.button9.Text = "Paket Kaldır";
             this.button9.UseVisualStyleBackColor = false;
             this.button9.Click += new System.EventHandler(this.button9_Click);
+            // 
+            // button48
+            // 
+            this.button48.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.button48.BackColor = System.Drawing.Color.DimGray;
+            this.button48.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button48.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.button48.Location = new System.Drawing.Point(851, 3);
+            this.button48.Name = "button48";
+            this.button48.Size = new System.Drawing.Size(416, 42);
+            this.button48.TabIndex = 2;
+            this.button48.Text = "Dosyadan .Msu .Cab Yükle";
+            this.button48.UseVisualStyleBackColor = false;
+            this.button48.Click += new System.EventHandler(this.button50_Click);
             // 
             // button8
             // 
@@ -1191,6 +1221,15 @@
             this.groupBox9.TabStop = false;
             this.groupBox9.Text = "Diğer Ayarlar";
             // 
+            // comboBox1
+            // 
+            this.comboBox1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Location = new System.Drawing.Point(164, 21);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(1097, 32);
+            this.comboBox1.TabIndex = 21;
+            // 
             // groupBox11
             // 
             this.groupBox11.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
@@ -1205,6 +1244,19 @@
             this.groupBox11.TabIndex = 20;
             this.groupBox11.TabStop = false;
             this.groupBox11.Text = "Dil Dosyası Oluştur";
+            // 
+            // button63
+            // 
+            this.button63.BackColor = System.Drawing.Color.DimGray;
+            this.button63.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button63.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.button63.Location = new System.Drawing.Point(211, 31);
+            this.button63.Name = "button63";
+            this.button63.Size = new System.Drawing.Size(330, 42);
+            this.button63.TabIndex = 12;
+            this.button63.Text = "Dil klasörü kopyala";
+            this.button63.UseVisualStyleBackColor = false;
+            this.button63.Click += new System.EventHandler(this.button65_Click);
             // 
             // button35
             // 
@@ -1408,6 +1460,84 @@
             this.button38.UseVisualStyleBackColor = false;
             this.button38.Click += new System.EventHandler(this.button38_Click);
             // 
+            // button52
+            // 
+            this.button52.BackColor = System.Drawing.Color.DimGray;
+            this.button52.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button52.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.button52.Location = new System.Drawing.Point(214, 105);
+            this.button52.Name = "button52";
+            this.button52.Size = new System.Drawing.Size(57, 42);
+            this.button52.TabIndex = 12;
+            this.button52.Text = "?";
+            this.button52.UseVisualStyleBackColor = false;
+            this.button52.Click += new System.EventHandler(this.button54_Click);
+            // 
+            // button56
+            // 
+            this.button56.BackColor = System.Drawing.Color.DimGray;
+            this.button56.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button56.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.button56.Location = new System.Drawing.Point(803, 105);
+            this.button56.Name = "button56";
+            this.button56.Size = new System.Drawing.Size(182, 42);
+            this.button56.TabIndex = 12;
+            this.button56.Text = "/Set-UserLocale";
+            this.button56.UseVisualStyleBackColor = false;
+            this.button56.Click += new System.EventHandler(this.button58_Click);
+            // 
+            // button55
+            // 
+            this.button55.BackColor = System.Drawing.Color.DimGray;
+            this.button55.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button55.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.button55.Location = new System.Drawing.Point(627, 105);
+            this.button55.Name = "button55";
+            this.button55.Size = new System.Drawing.Size(170, 42);
+            this.button55.TabIndex = 12;
+            this.button55.Text = "/Set-SysLocale";
+            this.button55.UseVisualStyleBackColor = false;
+            this.button55.Click += new System.EventHandler(this.button57_Click);
+            // 
+            // button54
+            // 
+            this.button54.BackColor = System.Drawing.Color.DimGray;
+            this.button54.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button54.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.button54.Location = new System.Drawing.Point(391, 105);
+            this.button54.Name = "button54";
+            this.button54.Size = new System.Drawing.Size(230, 42);
+            this.button54.TabIndex = 12;
+            this.button54.Text = "/Set-UILangFallBack";
+            this.button54.UseVisualStyleBackColor = false;
+            this.button54.Click += new System.EventHandler(this.button56_Click);
+            // 
+            // button53
+            // 
+            this.button53.BackColor = System.Drawing.Color.DimGray;
+            this.button53.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button53.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.button53.Location = new System.Drawing.Point(277, 105);
+            this.button53.Name = "button53";
+            this.button53.Size = new System.Drawing.Size(108, 42);
+            this.button53.TabIndex = 12;
+            this.button53.Text = "/Get-Intl";
+            this.button53.UseVisualStyleBackColor = false;
+            this.button53.Click += new System.EventHandler(this.button55_Click);
+            // 
+            // button51
+            // 
+            this.button51.BackColor = System.Drawing.Color.DimGray;
+            this.button51.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button51.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.button51.Location = new System.Drawing.Point(14, 105);
+            this.button51.Name = "button51";
+            this.button51.Size = new System.Drawing.Size(194, 42);
+            this.button51.TabIndex = 12;
+            this.button51.Text = "/Set-InputLocale";
+            this.button51.UseVisualStyleBackColor = false;
+            this.button51.Click += new System.EventHandler(this.button53_Click);
+            // 
             // button33
             // 
             this.button33.BackColor = System.Drawing.Color.DimGray;
@@ -1433,6 +1563,72 @@
             this.tabPage6.Size = new System.Drawing.Size(1273, 529);
             this.tabPage6.TabIndex = 5;
             this.tabPage6.Text = "Appx";
+            // 
+            // groupBox16
+            // 
+            this.groupBox16.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.groupBox16.BackColor = System.Drawing.Color.Black;
+            this.groupBox16.Controls.Add(this.checkBox16);
+            this.groupBox16.Controls.Add(this.button62);
+            this.groupBox16.Controls.Add(this.button60);
+            this.groupBox16.Controls.Add(this.button61);
+            this.groupBox16.ForeColor = System.Drawing.Color.White;
+            this.groupBox16.Location = new System.Drawing.Point(3, 431);
+            this.groupBox16.Name = "groupBox16";
+            this.groupBox16.Size = new System.Drawing.Size(1255, 95);
+            this.groupBox16.TabIndex = 22;
+            this.groupBox16.TabStop = false;
+            this.groupBox16.Text = "PPKG";
+            // 
+            // checkBox16
+            // 
+            this.checkBox16.AutoSize = true;
+            this.checkBox16.Location = new System.Drawing.Point(902, 61);
+            this.checkBox16.Name = "checkBox16";
+            this.checkBox16.Size = new System.Drawing.Size(162, 28);
+            this.checkBox16.TabIndex = 13;
+            this.checkBox16.Text = " /SingleInstance";
+            this.checkBox16.UseVisualStyleBackColor = true;
+            // 
+            // button62
+            // 
+            this.button62.BackColor = System.Drawing.Color.DimGray;
+            this.button62.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button62.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.button62.Location = new System.Drawing.Point(618, 47);
+            this.button62.Name = "button62";
+            this.button62.Size = new System.Drawing.Size(278, 42);
+            this.button62.TabIndex = 12;
+            this.button62.Text = "/Apply-CustomDataImage";
+            this.button62.UseVisualStyleBackColor = false;
+            this.button62.Click += new System.EventHandler(this.button64_Click);
+            // 
+            // button60
+            // 
+            this.button60.BackColor = System.Drawing.Color.DimGray;
+            this.button60.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button60.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.button60.Location = new System.Drawing.Point(293, 47);
+            this.button60.Name = "button60";
+            this.button60.Size = new System.Drawing.Size(319, 42);
+            this.button60.TabIndex = 12;
+            this.button60.Text = "/Get-ProvisioningPackageInfo";
+            this.button60.UseVisualStyleBackColor = false;
+            this.button60.Click += new System.EventHandler(this.button63_Click);
+            // 
+            // button61
+            // 
+            this.button61.BackColor = System.Drawing.Color.DimGray;
+            this.button61.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button61.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.button61.Location = new System.Drawing.Point(6, 47);
+            this.button61.Name = "button61";
+            this.button61.Size = new System.Drawing.Size(281, 42);
+            this.button61.TabIndex = 12;
+            this.button61.Text = "/Add-ProvisioningPackage";
+            this.button61.UseVisualStyleBackColor = false;
+            this.button61.Click += new System.EventHandler(this.button62_Click);
             // 
             // groupBox12
             // 
@@ -1488,6 +1684,19 @@
             this.textBox10.Size = new System.Drawing.Size(1082, 22);
             this.textBox10.TabIndex = 18;
             this.textBox10.Text = "Microsoft.ZuneMusic_11.2305.4.0_neutral_~_8wekyb3d8bbwe";
+            // 
+            // button46
+            // 
+            this.button46.BackColor = System.Drawing.Color.DimGray;
+            this.button46.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button46.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.button46.Location = new System.Drawing.Point(442, 62);
+            this.button46.Name = "button46";
+            this.button46.Size = new System.Drawing.Size(514, 42);
+            this.button46.TabIndex = 12;
+            this.button46.Text = "Pakete dosya ekle (/Set-ProvisionedAppxDataFile)";
+            this.button46.UseVisualStyleBackColor = false;
+            this.button46.Click += new System.EventHandler(this.button47_Click);
             // 
             // button44
             // 
@@ -1548,6 +1757,44 @@
             this.textBox9.TabIndex = 17;
             this.textBox9.Text = "all";
             this.textBox9.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // checkBox13
+            // 
+            this.checkBox13.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.checkBox13.AutoSize = true;
+            this.checkBox13.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.checkBox13.Location = new System.Drawing.Point(927, 115);
+            this.checkBox13.Name = "checkBox13";
+            this.checkBox13.Size = new System.Drawing.Size(309, 30);
+            this.checkBox13.TabIndex = 18;
+            this.checkBox13.Text = "/stubpackageoption:installfull";
+            this.checkBox13.UseVisualStyleBackColor = true;
+            // 
+            // checkBox14
+            // 
+            this.checkBox14.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.checkBox14.AutoSize = true;
+            this.checkBox14.Checked = true;
+            this.checkBox14.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.checkBox14.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.checkBox14.Location = new System.Drawing.Point(527, 43);
+            this.checkBox14.Name = "checkBox14";
+            this.checkBox14.Size = new System.Drawing.Size(232, 30);
+            this.checkBox14.TabIndex = 18;
+            this.checkBox14.Text = "Bölge kodunu kulllan";
+            this.checkBox14.UseVisualStyleBackColor = true;
+            // 
+            // checkBox12
+            // 
+            this.checkBox12.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.checkBox12.AutoSize = true;
+            this.checkBox12.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.checkBox12.Location = new System.Drawing.Point(927, 79);
+            this.checkBox12.Name = "checkBox12";
+            this.checkBox12.Size = new System.Drawing.Size(322, 30);
+            this.checkBox12.TabIndex = 18;
+            this.checkBox12.Text = "/stubpackageoption:installstub";
+            this.checkBox12.UseVisualStyleBackColor = true;
             // 
             // checkBox8
             // 
@@ -1654,35 +1901,6 @@
             this.label19.TabIndex = 20;
             this.label19.Text = "Gerekli Ek Paket Sayısı";
             // 
-            // button42
-            // 
-            this.button42.BackColor = System.Drawing.Color.DimGray;
-            this.button42.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button42.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.button42.Location = new System.Drawing.Point(6, 31);
-            this.button42.Name = "button42";
-            this.button42.Size = new System.Drawing.Size(300, 42);
-            this.button42.TabIndex = 12;
-            this.button42.Text = "Uygulama Paketlerini Listele";
-            this.button42.UseVisualStyleBackColor = false;
-            this.button42.Click += new System.EventHandler(this.button42_Click);
-            // 
-            // richTextBox1
-            // 
-            this.richTextBox1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.richTextBox1.BackColor = System.Drawing.Color.Black;
-            this.richTextBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.richTextBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.richTextBox1.ForeColor = System.Drawing.Color.White;
-            this.richTextBox1.Location = new System.Drawing.Point(13, 607);
-            this.richTextBox1.Name = "richTextBox1";
-            this.richTextBox1.ReadOnly = true;
-            this.richTextBox1.Size = new System.Drawing.Size(1281, 260);
-            this.richTextBox1.TabIndex = 2;
-            this.richTextBox1.Text = resources.GetString("richTextBox1.Text");
-            this.richTextBox1.TextChanged += new System.EventHandler(this.richTextBox1_TextChanged);
-            // 
             // button45
             // 
             this.button45.BackColor = System.Drawing.Color.DimGray;
@@ -1696,92 +1914,18 @@
             this.button45.UseVisualStyleBackColor = false;
             this.button45.Click += new System.EventHandler(this.button46_Click);
             // 
-            // button46
+            // button42
             // 
-            this.button46.BackColor = System.Drawing.Color.DimGray;
-            this.button46.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button46.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.button46.Location = new System.Drawing.Point(442, 62);
-            this.button46.Name = "button46";
-            this.button46.Size = new System.Drawing.Size(514, 42);
-            this.button46.TabIndex = 12;
-            this.button46.Text = "Pakete dosya ekle (/Set-ProvisionedAppxDataFile)";
-            this.button46.UseVisualStyleBackColor = false;
-            this.button46.Click += new System.EventHandler(this.button47_Click);
-            // 
-            // checkBox12
-            // 
-            this.checkBox12.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.checkBox12.AutoSize = true;
-            this.checkBox12.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.checkBox12.Location = new System.Drawing.Point(927, 79);
-            this.checkBox12.Name = "checkBox12";
-            this.checkBox12.Size = new System.Drawing.Size(322, 30);
-            this.checkBox12.TabIndex = 18;
-            this.checkBox12.Text = "/stubpackageoption:installstub";
-            this.checkBox12.UseVisualStyleBackColor = true;
-            // 
-            // checkBox13
-            // 
-            this.checkBox13.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.checkBox13.AutoSize = true;
-            this.checkBox13.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.checkBox13.Location = new System.Drawing.Point(927, 115);
-            this.checkBox13.Name = "checkBox13";
-            this.checkBox13.Size = new System.Drawing.Size(309, 30);
-            this.checkBox13.TabIndex = 18;
-            this.checkBox13.Text = "/stubpackageoption:installfull";
-            this.checkBox13.UseVisualStyleBackColor = true;
-            // 
-            // checkBox14
-            // 
-            this.checkBox14.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.checkBox14.AutoSize = true;
-            this.checkBox14.Checked = true;
-            this.checkBox14.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.checkBox14.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.checkBox14.Location = new System.Drawing.Point(527, 43);
-            this.checkBox14.Name = "checkBox14";
-            this.checkBox14.Size = new System.Drawing.Size(232, 30);
-            this.checkBox14.TabIndex = 18;
-            this.checkBox14.Text = "Bölge kodunu kulllan";
-            this.checkBox14.UseVisualStyleBackColor = true;
-            // 
-            // comboBox1
-            // 
-            this.comboBox1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(164, 21);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(1097, 32);
-            this.comboBox1.TabIndex = 21;
-            // 
-            // button47
-            // 
-            this.button47.BackColor = System.Drawing.Color.DimGray;
-            this.button47.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button47.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.button47.Location = new System.Drawing.Point(574, 120);
-            this.button47.Name = "button47";
-            this.button47.Size = new System.Drawing.Size(306, 42);
-            this.button47.TabIndex = 15;
-            this.button47.Text = "Change to English Language";
-            this.button47.UseVisualStyleBackColor = false;
-            this.button47.Click += new System.EventHandler(this.button49_Click);
-            // 
-            // button48
-            // 
-            this.button48.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.button48.BackColor = System.Drawing.Color.DimGray;
-            this.button48.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button48.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.button48.Location = new System.Drawing.Point(851, 3);
-            this.button48.Name = "button48";
-            this.button48.Size = new System.Drawing.Size(416, 42);
-            this.button48.TabIndex = 2;
-            this.button48.Text = "Dosyadan .Msu .Cab Yükle";
-            this.button48.UseVisualStyleBackColor = false;
-            this.button48.Click += new System.EventHandler(this.button50_Click);
+            this.button42.BackColor = System.Drawing.Color.DimGray;
+            this.button42.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button42.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.button42.Location = new System.Drawing.Point(6, 31);
+            this.button42.Name = "button42";
+            this.button42.Size = new System.Drawing.Size(300, 42);
+            this.button42.TabIndex = 12;
+            this.button42.Text = "Uygulama Paketlerini Listele";
+            this.button42.UseVisualStyleBackColor = false;
+            this.button42.Click += new System.EventHandler(this.button42_Click);
             // 
             // tabPage7
             // 
@@ -1797,19 +1941,19 @@
             this.tabPage7.TabIndex = 6;
             this.tabPage7.Text = "Startnet.cmd";
             // 
-            // richTextBox2
+            // button50
             // 
-            this.richTextBox2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.richTextBox2.BackColor = System.Drawing.Color.Black;
-            this.richTextBox2.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.richTextBox2.ForeColor = System.Drawing.Color.White;
-            this.richTextBox2.Location = new System.Drawing.Point(3, 3);
-            this.richTextBox2.Name = "richTextBox2";
-            this.richTextBox2.Size = new System.Drawing.Size(1087, 523);
-            this.richTextBox2.TabIndex = 0;
-            this.richTextBox2.Text = "wpeinit\n";
+            this.button50.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.button50.BackColor = System.Drawing.Color.DimGray;
+            this.button50.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button50.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.button50.Location = new System.Drawing.Point(1096, 52);
+            this.button50.Name = "button50";
+            this.button50.Size = new System.Drawing.Size(174, 43);
+            this.button50.TabIndex = 13;
+            this.button50.Text = "Kaydet";
+            this.button50.UseVisualStyleBackColor = false;
+            this.button50.Click += new System.EventHandler(this.button52_Click);
             // 
             // button49
             // 
@@ -1825,101 +1969,26 @@
             this.button49.UseVisualStyleBackColor = false;
             this.button49.Click += new System.EventHandler(this.button51_Click);
             // 
-            // button50
+            // richTextBox2
             // 
-            this.button50.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.button50.BackColor = System.Drawing.Color.DimGray;
-            this.button50.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button50.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.button50.Location = new System.Drawing.Point(1096, 52);
-            this.button50.Name = "button50";
-            this.button50.Size = new System.Drawing.Size(174, 43);
-            this.button50.TabIndex = 13;
-            this.button50.Text = "Kaydet";
-            this.button50.UseVisualStyleBackColor = false;
-            this.button50.Click += new System.EventHandler(this.button52_Click);
-            // 
-            // button51
-            // 
-            this.button51.BackColor = System.Drawing.Color.DimGray;
-            this.button51.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button51.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.button51.Location = new System.Drawing.Point(14, 105);
-            this.button51.Name = "button51";
-            this.button51.Size = new System.Drawing.Size(194, 42);
-            this.button51.TabIndex = 12;
-            this.button51.Text = "/Set-InputLocale";
-            this.button51.UseVisualStyleBackColor = false;
-            this.button51.Click += new System.EventHandler(this.button53_Click);
-            // 
-            // button52
-            // 
-            this.button52.BackColor = System.Drawing.Color.DimGray;
-            this.button52.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button52.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.button52.Location = new System.Drawing.Point(214, 105);
-            this.button52.Name = "button52";
-            this.button52.Size = new System.Drawing.Size(57, 42);
-            this.button52.TabIndex = 12;
-            this.button52.Text = "?";
-            this.button52.UseVisualStyleBackColor = false;
-            this.button52.Click += new System.EventHandler(this.button54_Click);
-            // 
-            // button53
-            // 
-            this.button53.BackColor = System.Drawing.Color.DimGray;
-            this.button53.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button53.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.button53.Location = new System.Drawing.Point(277, 105);
-            this.button53.Name = "button53";
-            this.button53.Size = new System.Drawing.Size(108, 42);
-            this.button53.TabIndex = 12;
-            this.button53.Text = "/Get-Intl";
-            this.button53.UseVisualStyleBackColor = false;
-            this.button53.Click += new System.EventHandler(this.button55_Click);
-            // 
-            // button54
-            // 
-            this.button54.BackColor = System.Drawing.Color.DimGray;
-            this.button54.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button54.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.button54.Location = new System.Drawing.Point(391, 105);
-            this.button54.Name = "button54";
-            this.button54.Size = new System.Drawing.Size(230, 42);
-            this.button54.TabIndex = 12;
-            this.button54.Text = "/Set-UILangFallBack";
-            this.button54.UseVisualStyleBackColor = false;
-            this.button54.Click += new System.EventHandler(this.button56_Click);
-            // 
-            // button55
-            // 
-            this.button55.BackColor = System.Drawing.Color.DimGray;
-            this.button55.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button55.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.button55.Location = new System.Drawing.Point(627, 105);
-            this.button55.Name = "button55";
-            this.button55.Size = new System.Drawing.Size(170, 42);
-            this.button55.TabIndex = 12;
-            this.button55.Text = "/Set-SysLocale";
-            this.button55.UseVisualStyleBackColor = false;
-            this.button55.Click += new System.EventHandler(this.button57_Click);
-            // 
-            // button56
-            // 
-            this.button56.BackColor = System.Drawing.Color.DimGray;
-            this.button56.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button56.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.button56.Location = new System.Drawing.Point(803, 105);
-            this.button56.Name = "button56";
-            this.button56.Size = new System.Drawing.Size(182, 42);
-            this.button56.TabIndex = 12;
-            this.button56.Text = "/Set-UserLocale";
-            this.button56.UseVisualStyleBackColor = false;
-            this.button56.Click += new System.EventHandler(this.button58_Click);
+            this.richTextBox2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.richTextBox2.BackColor = System.Drawing.Color.Black;
+            this.richTextBox2.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.richTextBox2.ForeColor = System.Drawing.Color.White;
+            this.richTextBox2.Location = new System.Drawing.Point(3, 3);
+            this.richTextBox2.Name = "richTextBox2";
+            this.richTextBox2.Size = new System.Drawing.Size(1087, 523);
+            this.richTextBox2.TabIndex = 0;
+            this.richTextBox2.Text = "wpeinit\n";
             // 
             // tabPage8
             // 
             this.tabPage8.BackColor = System.Drawing.Color.Black;
+            this.tabPage8.Controls.Add(this.label22);
+            this.tabPage8.Controls.Add(this.button64);
+            this.tabPage8.Controls.Add(this.textBox12);
             this.tabPage8.Controls.Add(this.label21);
             this.tabPage8.Controls.Add(this.textBox11);
             this.tabPage8.Controls.Add(this.label16);
@@ -1938,19 +2007,128 @@
             this.tabPage8.TabIndex = 7;
             this.tabPage8.Text = "Boot Order";
             // 
-            // richTextBox3
+            // label21
             // 
-            this.richTextBox3.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.richTextBox3.BackColor = System.Drawing.Color.Black;
-            this.richTextBox3.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.richTextBox3.ForeColor = System.Drawing.Color.White;
-            this.richTextBox3.Location = new System.Drawing.Point(3, 3);
-            this.richTextBox3.Name = "richTextBox3";
-            this.richTextBox3.Size = new System.Drawing.Size(1087, 526);
-            this.richTextBox3.TabIndex = 14;
-            this.richTextBox3.Text = resources.GetString("richTextBox3.Text");
+            this.label21.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.label21.AutoSize = true;
+            this.label21.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label21.Location = new System.Drawing.Point(1092, 421);
+            this.label21.Name = "label21";
+            this.label21.Size = new System.Drawing.Size(178, 20);
+            this.label21.TabIndex = 22;
+            this.label21.Text = "Add options to Oscdimg";
+            // 
+            // textBox11
+            // 
+            this.textBox11.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.textBox11.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBox11.Location = new System.Drawing.Point(1096, 444);
+            this.textBox11.Name = "textBox11";
+            this.textBox11.Size = new System.Drawing.Size(174, 22);
+            this.textBox11.TabIndex = 21;
+            this.textBox11.Text = "-m";
+            this.textBox11.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // label16
+            // 
+            this.label16.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.label16.AutoSize = true;
+            this.label16.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label16.Location = new System.Drawing.Point(1102, 478);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(161, 20);
+            this.label16.TabIndex = 22;
+            this.label16.Text = "Windows Kits Version";
+            // 
+            // textBox8
+            // 
+            this.textBox8.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.textBox8.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBox8.Location = new System.Drawing.Point(1096, 501);
+            this.textBox8.Name = "textBox8";
+            this.textBox8.Size = new System.Drawing.Size(174, 22);
+            this.textBox8.TabIndex = 21;
+            this.textBox8.Text = "10";
+            this.textBox8.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // checkBox15
+            // 
+            this.checkBox15.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.checkBox15.AutoSize = true;
+            this.checkBox15.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.checkBox15.Location = new System.Drawing.Point(1096, 294);
+            this.checkBox15.Name = "checkBox15";
+            this.checkBox15.Size = new System.Drawing.Size(174, 30);
+            this.checkBox15.TabIndex = 20;
+            this.checkBox15.Text = "Use boot order";
+            this.checkBox15.UseVisualStyleBackColor = true;
+            // 
+            // groupBox15
+            // 
+            this.groupBox15.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.groupBox15.BackColor = System.Drawing.Color.Black;
+            this.groupBox15.Controls.Add(this.radioButton5);
+            this.groupBox15.Controls.Add(this.radioButton4);
+            this.groupBox15.Controls.Add(this.radioButton3);
+            this.groupBox15.ForeColor = System.Drawing.Color.White;
+            this.groupBox15.Location = new System.Drawing.Point(1096, 150);
+            this.groupBox15.Name = "groupBox15";
+            this.groupBox15.Size = new System.Drawing.Size(174, 138);
+            this.groupBox15.TabIndex = 19;
+            this.groupBox15.TabStop = false;
+            this.groupBox15.Text = "Architecture";
+            // 
+            // radioButton5
+            // 
+            this.radioButton5.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.radioButton5.AutoSize = true;
+            this.radioButton5.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.radioButton5.Location = new System.Drawing.Point(6, 100);
+            this.radioButton5.Name = "radioButton5";
+            this.radioButton5.Size = new System.Drawing.Size(65, 30);
+            this.radioButton5.TabIndex = 18;
+            this.radioButton5.Text = "x86";
+            this.radioButton5.UseVisualStyleBackColor = true;
+            // 
+            // radioButton4
+            // 
+            this.radioButton4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.radioButton4.AutoSize = true;
+            this.radioButton4.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.radioButton4.Location = new System.Drawing.Point(6, 64);
+            this.radioButton4.Name = "radioButton4";
+            this.radioButton4.Size = new System.Drawing.Size(95, 30);
+            this.radioButton4.TabIndex = 18;
+            this.radioButton4.Text = "Arm64";
+            this.radioButton4.UseVisualStyleBackColor = true;
+            // 
+            // radioButton3
+            // 
+            this.radioButton3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.radioButton3.AutoSize = true;
+            this.radioButton3.Checked = true;
+            this.radioButton3.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.radioButton3.Location = new System.Drawing.Point(6, 31);
+            this.radioButton3.Name = "radioButton3";
+            this.radioButton3.Size = new System.Drawing.Size(65, 30);
+            this.radioButton3.TabIndex = 18;
+            this.radioButton3.TabStop = true;
+            this.radioButton3.Text = "x64";
+            this.radioButton3.UseVisualStyleBackColor = true;
+            // 
+            // button59
+            // 
+            this.button59.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.button59.BackColor = System.Drawing.Color.DimGray;
+            this.button59.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button59.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.button59.Location = new System.Drawing.Point(1096, 101);
+            this.button59.Name = "button59";
+            this.button59.Size = new System.Drawing.Size(174, 43);
+            this.button59.TabIndex = 15;
+            this.button59.Text = "ISO Oluştur";
+            this.button59.UseVisualStyleBackColor = false;
+            this.button59.Click += new System.EventHandler(this.button61_Click);
             // 
             // button57
             // 
@@ -1980,206 +2158,69 @@
             this.button58.UseVisualStyleBackColor = false;
             this.button58.Click += new System.EventHandler(this.button59_Click);
             // 
-            // button59
+            // richTextBox3
             // 
-            this.button59.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.button59.BackColor = System.Drawing.Color.DimGray;
-            this.button59.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button59.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.button59.Location = new System.Drawing.Point(1096, 101);
-            this.button59.Name = "button59";
-            this.button59.Size = new System.Drawing.Size(174, 43);
-            this.button59.TabIndex = 15;
-            this.button59.Text = "ISO Oluştur";
-            this.button59.UseVisualStyleBackColor = false;
-            this.button59.Click += new System.EventHandler(this.button61_Click);
-            // 
-            // radioButton3
-            // 
-            this.radioButton3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.radioButton3.AutoSize = true;
-            this.radioButton3.Checked = true;
-            this.radioButton3.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.radioButton3.Location = new System.Drawing.Point(6, 31);
-            this.radioButton3.Name = "radioButton3";
-            this.radioButton3.Size = new System.Drawing.Size(65, 30);
-            this.radioButton3.TabIndex = 18;
-            this.radioButton3.TabStop = true;
-            this.radioButton3.Text = "x64";
-            this.radioButton3.UseVisualStyleBackColor = true;
-            // 
-            // groupBox15
-            // 
-            this.groupBox15.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.groupBox15.BackColor = System.Drawing.Color.Black;
-            this.groupBox15.Controls.Add(this.radioButton5);
-            this.groupBox15.Controls.Add(this.radioButton4);
-            this.groupBox15.Controls.Add(this.radioButton3);
-            this.groupBox15.ForeColor = System.Drawing.Color.White;
-            this.groupBox15.Location = new System.Drawing.Point(1096, 150);
-            this.groupBox15.Name = "groupBox15";
-            this.groupBox15.Size = new System.Drawing.Size(174, 138);
-            this.groupBox15.TabIndex = 19;
-            this.groupBox15.TabStop = false;
-            this.groupBox15.Text = "Architecture";
-            // 
-            // radioButton4
-            // 
-            this.radioButton4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.radioButton4.AutoSize = true;
-            this.radioButton4.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.radioButton4.Location = new System.Drawing.Point(6, 64);
-            this.radioButton4.Name = "radioButton4";
-            this.radioButton4.Size = new System.Drawing.Size(95, 30);
-            this.radioButton4.TabIndex = 18;
-            this.radioButton4.Text = "Arm64";
-            this.radioButton4.UseVisualStyleBackColor = true;
-            // 
-            // radioButton5
-            // 
-            this.radioButton5.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.radioButton5.AutoSize = true;
-            this.radioButton5.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.radioButton5.Location = new System.Drawing.Point(6, 100);
-            this.radioButton5.Name = "radioButton5";
-            this.radioButton5.Size = new System.Drawing.Size(65, 30);
-            this.radioButton5.TabIndex = 18;
-            this.radioButton5.Text = "x86";
-            this.radioButton5.UseVisualStyleBackColor = true;
-            // 
-            // checkBox15
-            // 
-            this.checkBox15.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.checkBox15.AutoSize = true;
-            this.checkBox15.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.checkBox15.Location = new System.Drawing.Point(1096, 294);
-            this.checkBox15.Name = "checkBox15";
-            this.checkBox15.Size = new System.Drawing.Size(174, 30);
-            this.checkBox15.TabIndex = 20;
-            this.checkBox15.Text = "Use boot order";
-            this.checkBox15.UseVisualStyleBackColor = true;
-            // 
-            // textBox8
-            // 
-            this.textBox8.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBox8.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox8.Location = new System.Drawing.Point(1096, 501);
-            this.textBox8.Name = "textBox8";
-            this.textBox8.Size = new System.Drawing.Size(174, 22);
-            this.textBox8.TabIndex = 21;
-            this.textBox8.Text = "10";
-            this.textBox8.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // label16
-            // 
-            this.label16.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.label16.AutoSize = true;
-            this.label16.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label16.Location = new System.Drawing.Point(1103, 474);
-            this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(161, 20);
-            this.label16.TabIndex = 22;
-            this.label16.Text = "Windows Kits Version";
-            // 
-            // groupBox16
-            // 
-            this.groupBox16.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.richTextBox3.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.groupBox16.BackColor = System.Drawing.Color.Black;
-            this.groupBox16.Controls.Add(this.checkBox16);
-            this.groupBox16.Controls.Add(this.button62);
-            this.groupBox16.Controls.Add(this.button60);
-            this.groupBox16.Controls.Add(this.button61);
-            this.groupBox16.ForeColor = System.Drawing.Color.White;
-            this.groupBox16.Location = new System.Drawing.Point(3, 431);
-            this.groupBox16.Name = "groupBox16";
-            this.groupBox16.Size = new System.Drawing.Size(1255, 95);
-            this.groupBox16.TabIndex = 22;
-            this.groupBox16.TabStop = false;
-            this.groupBox16.Text = "PPKG";
+            this.richTextBox3.BackColor = System.Drawing.Color.Black;
+            this.richTextBox3.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.richTextBox3.ForeColor = System.Drawing.Color.White;
+            this.richTextBox3.Location = new System.Drawing.Point(3, 3);
+            this.richTextBox3.Name = "richTextBox3";
+            this.richTextBox3.Size = new System.Drawing.Size(1087, 492);
+            this.richTextBox3.TabIndex = 14;
+            this.richTextBox3.Text = resources.GetString("richTextBox3.Text");
             // 
-            // button61
+            // richTextBox1
             // 
-            this.button61.BackColor = System.Drawing.Color.DimGray;
-            this.button61.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button61.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.button61.Location = new System.Drawing.Point(6, 47);
-            this.button61.Name = "button61";
-            this.button61.Size = new System.Drawing.Size(281, 42);
-            this.button61.TabIndex = 12;
-            this.button61.Text = "/Add-ProvisioningPackage";
-            this.button61.UseVisualStyleBackColor = false;
-            this.button61.Click += new System.EventHandler(this.button62_Click);
+            this.richTextBox1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.richTextBox1.BackColor = System.Drawing.Color.Black;
+            this.richTextBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.richTextBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.richTextBox1.ForeColor = System.Drawing.Color.White;
+            this.richTextBox1.Location = new System.Drawing.Point(13, 607);
+            this.richTextBox1.Name = "richTextBox1";
+            this.richTextBox1.ReadOnly = true;
+            this.richTextBox1.Size = new System.Drawing.Size(1281, 260);
+            this.richTextBox1.TabIndex = 2;
+            this.richTextBox1.Text = resources.GetString("richTextBox1.Text");
+            this.richTextBox1.TextChanged += new System.EventHandler(this.richTextBox1_TextChanged);
             // 
-            // button60
+            // textBox12
             // 
-            this.button60.BackColor = System.Drawing.Color.DimGray;
-            this.button60.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button60.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.button60.Location = new System.Drawing.Point(293, 47);
-            this.button60.Name = "button60";
-            this.button60.Size = new System.Drawing.Size(319, 42);
-            this.button60.TabIndex = 12;
-            this.button60.Text = "/Get-ProvisioningPackageInfo";
-            this.button60.UseVisualStyleBackColor = false;
-            this.button60.Click += new System.EventHandler(this.button63_Click);
+            this.textBox12.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.textBox12.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBox12.Location = new System.Drawing.Point(190, 501);
+            this.textBox12.Name = "textBox12";
+            this.textBox12.Size = new System.Drawing.Size(757, 22);
+            this.textBox12.TabIndex = 24;
+            this.textBox12.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // button62
+            // button64
             // 
-            this.button62.BackColor = System.Drawing.Color.DimGray;
-            this.button62.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button62.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.button62.Location = new System.Drawing.Point(618, 47);
-            this.button62.Name = "button62";
-            this.button62.Size = new System.Drawing.Size(278, 42);
-            this.button62.TabIndex = 12;
-            this.button62.Text = "/Apply-CustomDataImage";
-            this.button62.UseVisualStyleBackColor = false;
-            this.button62.Click += new System.EventHandler(this.button64_Click);
+            this.button64.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.button64.BackColor = System.Drawing.Color.DimGray;
+            this.button64.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button64.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.button64.Location = new System.Drawing.Point(953, 501);
+            this.button64.Name = "button64";
+            this.button64.Size = new System.Drawing.Size(137, 22);
+            this.button64.TabIndex = 25;
+            this.button64.Text = "Run";
+            this.button64.UseVisualStyleBackColor = false;
+            this.button64.Click += new System.EventHandler(this.button66_Click);
             // 
-            // checkBox16
+            // label22
             // 
-            this.checkBox16.AutoSize = true;
-            this.checkBox16.Location = new System.Drawing.Point(902, 61);
-            this.checkBox16.Name = "checkBox16";
-            this.checkBox16.Size = new System.Drawing.Size(162, 28);
-            this.checkBox16.TabIndex = 13;
-            this.checkBox16.Text = " /SingleInstance";
-            this.checkBox16.UseVisualStyleBackColor = true;
-            // 
-            // button63
-            // 
-            this.button63.BackColor = System.Drawing.Color.DimGray;
-            this.button63.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button63.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.button63.Location = new System.Drawing.Point(211, 31);
-            this.button63.Name = "button63";
-            this.button63.Size = new System.Drawing.Size(330, 42);
-            this.button63.TabIndex = 12;
-            this.button63.Text = "Dil klasörü kopyala";
-            this.button63.UseVisualStyleBackColor = false;
-            this.button63.Click += new System.EventHandler(this.button65_Click);
-            // 
-            // textBox11
-            // 
-            this.textBox11.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBox11.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox11.Location = new System.Drawing.Point(1096, 444);
-            this.textBox11.Name = "textBox11";
-            this.textBox11.Size = new System.Drawing.Size(174, 22);
-            this.textBox11.TabIndex = 21;
-            this.textBox11.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // label21
-            // 
-            this.label21.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.label21.AutoSize = true;
-            this.label21.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label21.Location = new System.Drawing.Point(1098, 381);
-            this.label21.Name = "label21";
-            this.label21.Size = new System.Drawing.Size(165, 60);
-            this.label21.TabIndex = 22;
-            this.label21.Text = "Add options to\r\nOscdimg \r\n(-m is already present)";
+            this.label22.AutoSize = true;
+            this.label22.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label22.Location = new System.Drawing.Point(3, 504);
+            this.label22.Name = "label22";
+            this.label22.Size = new System.Drawing.Size(181, 17);
+            this.label22.TabIndex = 26;
+            this.label22.Text = "Custom Oscdimg Command";
             // 
             // Form1
             // 
@@ -2230,6 +2271,8 @@
             this.groupBox8.ResumeLayout(false);
             this.groupBox8.PerformLayout();
             this.tabPage6.ResumeLayout(false);
+            this.groupBox16.ResumeLayout(false);
+            this.groupBox16.PerformLayout();
             this.groupBox12.ResumeLayout(false);
             this.groupBox14.ResumeLayout(false);
             this.groupBox14.PerformLayout();
@@ -2241,8 +2284,6 @@
             this.tabPage8.PerformLayout();
             this.groupBox15.ResumeLayout(false);
             this.groupBox15.PerformLayout();
-            this.groupBox16.ResumeLayout(false);
-            this.groupBox16.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -2399,6 +2440,9 @@
         private System.Windows.Forms.Button button63;
         private System.Windows.Forms.Label label21;
         private System.Windows.Forms.TextBox textBox11;
+        private System.Windows.Forms.TextBox textBox12;
+        private System.Windows.Forms.Button button64;
+        private System.Windows.Forms.Label label22;
     }
 }
 
